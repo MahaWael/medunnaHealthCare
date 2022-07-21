@@ -7,7 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="medunnahealthcare" />
-        <module name="medunnaHealthCare" />
+        <module name="mycucumberproject" />
       </profile>
     </annotationProcessing>
   </component>
