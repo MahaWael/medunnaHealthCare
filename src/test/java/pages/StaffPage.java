@@ -122,6 +122,30 @@ public class StaffPage {
     @FindBy (xpath = " //button[@type='submit']")
     public WebElement  staffEditSavePatient;
 
+    //      Goksen/US21 staff search patient
+
+    @FindBy (xpath = "//a[@class='btn btn-warning btn-sm']")
+    public WebElement editshowAppointmentsForTeamSecondPatient;
+
+    @FindBy(xpath = "//select[@id='appointment-status']")
+    public WebElement statusForTheTeamSecondPatient;
+
+    @FindBy(xpath = "//select[@id='appointment-physician']")
+    public WebElement physicanSelectBoxUnderAppointments;
+
+    @FindBy(xpath ="//button[@id='save-entity']")
+    public WebElement savePatientsDoctor;
+
+    @FindBy(xpath = "(//span[@class='d-none d-md-inline'])[3]")
+    public WebElement patientTwoShowAppointments;
+
+    @FindBy( xpath = "(//span[@class='d-none d-md-inline'])[4]")
+    public WebElement showTestForTeamEightyNineDoctor;
+
+    @FindBy (xpath = "//a[@class='btn btn-info btn-sm']")
+    public WebElement staffCanSeeTestResultButton;
+
+
 }
 
 
