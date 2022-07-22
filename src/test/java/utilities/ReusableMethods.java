@@ -197,4 +197,17 @@ public class ReusableMethods {
         return dateObj.format(formatDate);
     }
 
+    public static boolean isElementUnupdateable(WebElement webElement){
+
+        String isElementHasDisabled = webElement.getAttribute("disabled");
+
+        boolean isElementUnupdatable = false;
+        if(isElementHasDisabled.contains("true") ){
+            isElementUnupdatable =true;
+        } else{
+            isElementUnupdatable = false;
+        }
+        return isElementUnupdatable;
+    }
+
 }

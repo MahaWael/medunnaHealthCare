@@ -4,6 +4,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
 public class StaffPage {
 
     public StaffPage() {PageFactory.initElements(Driver.getDriver(), this);
@@ -21,7 +23,7 @@ public class StaffPage {
     public WebElement signInAsAStaff;
 //        MY PAGES on header
 
-    @FindBy (xpath = "(//li[@class='dropdown nav-item'])[1]") //xpath = "//li[@id='entity-menu']
+    @FindBy (xpath = "//li[@id='entity-menu']") //xpath = "//li[@id='entity-menu']
     public WebElement buttonMyPages;
 
     //    Under MY PAGES dropdowns
@@ -68,13 +70,13 @@ public class StaffPage {
     @FindBy (id = "toDate")
     public WebElement toDate;
     //            Patients
-    @FindBy(xpath = "//span[@class='d-none d-md-inline'][1]")
+    @FindBy(xpath = "(//span[@class='d-none d-md-inline'])[1]")
     public WebElement viewButtonFirstPatient;
 
-    @FindBy(xpath = "//a[@class='btn btn-primary btn-sm'][1]")
+    @FindBy(xpath = "(//a[@class='btn btn-primary btn-sm'])[1]")
     public WebElement EditButtonFirstPatient;
 
-    @FindBy(xpath = "//a[@class='btn btn-warning btn-sm'][1]")
+    @FindBy(xpath = "(//a[@class='btn btn-warning btn-sm'])[1]")
     public WebElement showAppointmentFirstPatient;
 
     @FindBy(xpath = "(//th[@class='hand'])[2]")
@@ -121,6 +123,58 @@ public class StaffPage {
 
     @FindBy (xpath = " //button[@type='submit']")
     public WebElement  staffEditSavePatient;
+
+    // Sefik
+    @FindBy(xpath = "//tbody//tr//td[2]")
+    public List<WebElement> staffSearchedSsnList;
+
+    @FindBy(xpath = "//h2[@id='appointment-heading']")
+    public WebElement staffAppointmentsPageHeader;
+
+    @FindBy(xpath = "//h2[@id='c-test-result-heading']")
+    public WebElement staffTestResultsPageHeader;
+
+    @FindBy(xpath = "//h2[@id='hospitalmsappfrontendApp.cTestResult.home.createOrEditLabel']")
+    public WebElement staffUpdateTestResultPageHeader;
+
+    @FindBy(xpath = "//input[@name='result']")
+    public WebElement staffUpdateTestResultResultInput;
+
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement staffUpdateTestResultSaveButton;
+
+    @FindBy(xpath = "//div[@class = 'Toastify__toast Toastify__toast--success toastify-toast']")
+    public WebElement staffUpdateTestResultSuccessMessage;
+
+    @FindBy(xpath = "//tbody//tr[1]/td[3]")
+    public WebElement staffUpdateTestResultUpdatedResult;
+
+    @FindBy(xpath = "//tbody//tr//td[2]")
+    public List <WebElement> staffUpdateTestResultUpdatedResultList;
+
+    @FindBy(xpath = "//tbody//tr//td[1]")
+    public List <WebElement> staffUpdateTestResultUpdatedIdList;
+
+    @FindBy(xpath = "//h2[@id='c-test-heading']")
+    public WebElement staffUpdateTestsPageHeader;
+
+    @FindBy(xpath = "//input[@name='description']")
+    public WebElement staffUpdateTestResultDescriptionInput;
+
+    @FindBy(xpath = "//input[@name='id']")
+    public WebElement staffUpdateTestResultIdInput;
+
+    @FindBy(xpath = "//input[@name='date']")
+    public WebElement staffUpdateTestResultDateInput;
+
+    @FindBy(xpath = "//input[@name='createdDate']")
+    public WebElement staffUpdateTestResultCreatedDateInput;
+
+    @FindBy(xpath = "//select[@name='ctestItem.id']")
+    public WebElement staffUpdateTestResultItemInput;
+
+    @FindBy(xpath = "//select[@name='ctest.id']")
+    public WebElement staffUpdateTestResultTestInput;
 
 }
 
