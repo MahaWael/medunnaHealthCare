@@ -145,6 +145,12 @@ public class StaffPage {
     @FindBy (xpath = "//a[@class='btn btn-info btn-sm']")
     public WebElement staffCanSeeTestResultButton;
 
+    @FindBy (xpath = "//*[@id='entity-menu']/div/a[1]/span")
+    public WebElement searchPatientTwo;
+
+    @FindBy (xpath = "//input[@class='form-control']")
+    public WebElement sSNPatientSearchBox;
+
 
 }
 
