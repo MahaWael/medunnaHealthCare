@@ -426,6 +426,37 @@ public class AdminPage {
     //If you need any new WebElement please create at the bottom of the class
     //Create your new WebElements under this comment
 
+    // Birol
+    @FindBy (xpath = "//span[normalize-space()='Country']")
+    public WebElement countryDropDown;
+    @FindBy (xpath = "//input[@id='country-name']")
+    public WebElement sendCountryName;
+    @FindBy (xpath = "//span[normalize-space()='Save']")
+    public WebElement saveCountryButton;
+    @FindBy (xpath = "//div[@role='alert']")
+    public WebElement countrySavedPopUp;
+    @FindBy (xpath = "(//*[name()='path'][@fill='currentColor'])[1]")
+    public WebElement homeIcon;
+    @FindBy (xpath = "(//a)[1039]")
+    public WebElement viewCountryDetailsButton;
+    @FindBy (xpath = "//dd[normalize-space()='Alabama']")
+    public WebElement viewCountryAlabama;
+    @FindBy (xpath = "(//a)[1040]")
+    public WebElement countryEditButton;
+    @FindBy (xpath = "//input[@id='country-name']")
+    public WebElement countryEditCountryNameBox;
+    @FindBy (xpath = "(//a)[693]") //orjinal 1041 olacak bak yine de
+    public WebElement countryDeleteButton;
+    @FindBy (xpath = "//button[@id='jhi-confirm-delete-country']")
+    public WebElement countryDeleteConfirmButton;
+    @FindBy (xpath = "//div[@role='alert']")
+    public WebElement countryDeletedPopUp;
+    @FindBy(xpath = "//span[normalize-space()='Items&Titles']")
+    public WebElement ItemsAndTitles;
+
+
+
+
 
 
 
