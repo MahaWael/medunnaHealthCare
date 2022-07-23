@@ -1,4 +1,4 @@
-@US_21_staff_edit_and_view
+@US_21
 Feature: Staff can update patient appointments
 
   Background: US21 user in login page
