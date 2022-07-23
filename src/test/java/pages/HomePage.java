@@ -107,4 +107,8 @@ public class HomePage {
     //This part is added in the first sprint
     //Please add your code after this comment
 
+    //Birol
+    @FindBy(xpath = "//a[@id='login-item']")
+    public WebElement homeSignInButton;
+
 }
