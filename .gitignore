@@ -5,7 +5,7 @@ target/
 testData/
 extend.properties
 utilities/
-!utilities/TxtWriter.java
+!src/test/java/utilities/TxtWriter.java
 runners/
 main/
 hooks/
