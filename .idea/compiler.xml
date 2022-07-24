@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="medunnahealthcare" />
         <module name="mycucumberproject" />
+        <module name="medunnaHealthCare" />
       </profile>
     </annotationProcessing>
   </component>
