@@ -455,6 +455,44 @@ public class AdminPage {
     public WebElement ItemsAndTitles;
 
 
+    // these web elements belong to Seher
+
+    @FindBy(xpath = "(//*[text()='Test Item'])[1]")
+    public WebElement adminTestItemDropDownButton;
+
+    //under create new test item button
+
+    @FindBy(xpath = "//input[@id='c-test-item-name']")
+    public WebElement adminPageCreateOrEditTestItemNameBox;
+
+    @FindBy(xpath = "//input[@id='c-test-item-description']")
+    public WebElement adminPageCreateOrEditTestItemDescriptionBox;
+
+    @FindBy(xpath = "//input[@id='c-test-item-price']")
+    public WebElement adminPageCreateOrEditTestItemPriceBox;
+
+    @FindBy(xpath = "//input[@id='c-test-item-defaultValMin']")
+    public WebElement adminPageCreateOrEditTestItemDefaultMinValueBox;
+
+    @FindBy(xpath = "//input[@id='c-test-item-defaultValMax']")
+    public WebElement adminPageCreateOrEditTestItemDefaultMaxValueBox;
+
+    @FindBy(xpath = "//*[text()='Save']")
+    public WebElement adminPageCreateOrEditTestItemSaveButton;
+
+    @FindBy(xpath = "//*[contains(text(),'A new Test Item is created with identifier')]")
+    public WebElement adminPageCreateOrEditTestItemPopUpMessage;
+
+    @FindBy(xpath = "//*[text()='Internal server error.']")
+    public WebElement adminPageCreateOrEditTestItemAlertMessage;
+
+    //View test item page header
+    @FindBy(xpath = "(//*[text()='Test Item'])[2]")
+    public WebElement adminPageViewTestItemHeader;
+
+    @FindBy(xpath = "/html/body/div[2]/div/div[1]/div/div/div[3]/button[2]/span")
+    public WebElement adminPageTestItemConfirmDeleteOperationButton;
+
 
 
 

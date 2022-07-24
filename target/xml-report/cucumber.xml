@@ -1,43 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="74.818">
-    <testcase classname="Staff can update patient appointments" name="US_21_08_staff_edit_patient" time="46.248">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="2.623">
+    <testcase classname="test items" name="fetch all data of test items" time="1.988">
         <system-out>
-            <![CDATA[Given US21 user goes to medunna url.........................................passed
-When US21 user navigates to profile icon and clicks it......................passed
-And US21 user click sign in button..........................................passed
-Then US21 click username field..............................................passed
-And US21 user enters usernameUS21 "team89staff01" as staff..................passed
-And US21 user enters passwordUS21 "team89staff" as staff....................passed
-Then US21 user clicks Sign-in button........................................passed
-And US21 user navigates to MY PAGES Button and  click it....................passed
-And US21 click search patient button from dropdown..........................passed
-Then US21 User Enters valid SSN number "890-12-4324"........................passed
-And US21 User navigates to Show Appointments of patient and clicks..........passed
-And US21 User clicks the edit button of the first appointment...............passed
-Then US21 User can update the status "CANCELLED" CANCELLED , "PENDING" PENDING or "UNAPPROVED" UNAPPROVED.passed
-And US21 User selects the doctor who is the current doctor..................passed
-Then US21 User clicks Save button and verifies that is saved................passed
-And US21  Staff close the application.......................................passed
+            <![CDATA[Given US17 admin send a get request for test items' data....................passed
+And US17 admin deserializes the test items' data to java....................passed
+Then US17 admin saves the test items data to correspondent files and validates.passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Staff can update patient appointments" name="US_21_08_staff_edit_patient_2" time="28.424">
+    <testcase classname="test items" name="fetch all data of test items" time="0.381">
         <system-out>
-            <![CDATA[Given US21 user goes to medunna url.........................................passed
-When US21 user navigates to profile icon and clicks it......................passed
-And US21 user click sign in button..........................................passed
-Then US21 click username field..............................................passed
-And US21 user enters usernameUS21 "team89staff01" as staff..................passed
-And US21 user enters passwordUS21 "team89staff" as staff....................passed
-Then US21 user clicks Sign-in button........................................passed
-And US21 user navigates to MY PAGES Button and  click it....................passed
-And US21 click search patient button from dropdown..........................passed
-Then US21 User Enters valid SSN number "890-12-4324"........................passed
-And US21 User navigates to Show Appointments of patient and clicks..........passed
-Then US21 User clicks Show Tests button.....................................passed
-And US21 User clicks View Results button....................................passed
-Then US21 Verify that user can see Test Results.............................passed
-And US21  Staff close the application.......................................passed
+            <![CDATA[Given US17 admin send a post request to created test items' data............passed
+And US17 admin deserializes the created test items' data to java............passed
+Then US17 admin saves the test items' data to correspondent files and validates.passed
 ]]>
         </system-out>
     </testcase>
