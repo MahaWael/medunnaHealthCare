@@ -99,12 +99,112 @@ public class HomePage {
 
 
     public void login(String username,String password){
-        homePageUsernameBox.sendKeys(username);
-        homePagePasswordBox.sendKeys(password);
-        homePageLoginButton.click();
+        Driver.waitAndClick(homepageDropBox);
+        Driver.waitAndClick(homePageSignInButton);
+        Driver.waitAndSendText(homePageUsernameBox,username);
+        Driver.waitAndSendText(homePagePasswordBox,password);
+        Driver.waitAndClick(homePageLoginButton);
     }
 
     //This part is added in the first sprint
     //Please add your code after this comment
+    //Bestami (US_27)
+
+    // homepage-main locators
+
+
+
+
+
+//homepage-login locators
+    @FindBy(xpath = "(//span[text()='Sign in'])[2]")
+    public WebElement loginSignInText;
+
+    @FindBy(xpath = "//input[@name='username']")
+    public WebElement loginUserName;
+
+    @FindBy(xpath = "//input[@name='password']")
+    public WebElement loginPassword;
+
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement loginSignInButton;
+
+
+    //homepage-admin locators
+    @FindBy(xpath = "//span[text()='Items&Titles']")
+    public WebElement adminItemsAndTitlesDropBox;
+
+    @FindBy(xpath = "//span[text()='Messages']")
+    public WebElement adminMessagesTitle;
+
+
+    //home page- MessagesMainPage
+    @FindBy(xpath = "//span[text()='Name']")
+    public WebElement messagesMainPageName;
+
+    @FindBy(xpath = "//span[text()='Email']")
+    public WebElement messagesMainPageEmail;
+
+    @FindBy(xpath = "//span[text()='Subject']")
+    public WebElement messagesMainPageSubject;
+
+    @FindBy(xpath = "//span[text()='Message']")
+    public WebElement messagesMainPageMessage;
+
+    @FindBy(xpath = "//span[text()='Create a new Message']")
+    public WebElement messagesMainPageCreateANewMessageButton;
+
+    @FindBy(linkText = "71945")
+    public WebElement messagesMainPageId;
+
+
+    //homepage-Messages Default Page
+    @FindBy(xpath = "(//a[@class='btn btn-danger btn-sm'])[5]")
+    public WebElement messagesPageDeleteButton;
+
+    @FindBy(xpath = "//button[@id='jhi-confirm-delete-cMessage']")
+    public WebElement messagesPopUpDeleteMessage;
+
+    @FindBy(xpath = "//div[text()='A Message is deleted with identifier 71945']")
+    public WebElement messageDeletedSuccessMessage;
+
+    @FindBy(xpath = "//a[@class='btn btn-primary']")
+    public WebElement messagesIdPageEditButton;
+
+    @FindBy(xpath = "//span[text()='Create or edit a Message']")
+    public WebElement messagesDefaultPageCreateOrEditMessageTitle;
+
+    @FindBy(xpath = "//input[@name='id']")
+    public WebElement messagesDefaultPageCreateOrEditIdBox;
+
+    @FindBy(xpath = "//input[@name='name']")
+    public WebElement messagesDefaultPageCreateOrEditNameBox;
+
+    @FindBy(xpath = "//input[@name='email']")
+    public WebElement messagesDefaultPageCreateOrEditEmailBox;
+
+    @FindBy(xpath = "//input[@name='subject']")
+    public WebElement messagesDefaultPageCreateOrEditSubjectBox;
+
+    @FindBy(xpath = "//input[@name='message']")
+    public WebElement messagesDefaultPageCreateOrEditMessageBox;
+
+    @FindBy(xpath = "//span[text()='Save']")
+    public WebElement messagesDefaultPageCreateOrEditSaveButton;
+
+    @FindBy(xpath = "//div[@role='alert']")
+    public WebElement messagesDefaultPageCreateOrEditSuccessMessage;
+
+    @FindBy(xpath ="//div[text()='This field is invalid']" )
+    public WebElement messagesDefaultPageCreateOrEditInvalidEmailMessage;
+
+    @FindBy(xpath = "(//div[@class='invalid-feedback'])[1]")
+    public WebElement messagesDefaultPageNameBoxErrorMessage;
+
+    @FindBy(xpath = "//div[text()='Your email is required.']")
+    public WebElement messagesDefaultPageEmailBoxErrorMessage;
+
+    @FindBy(xpath = "//div[text()='This field is required.']")
+    public WebElement messagesDefaultPageSubjectBoxErrorMessage;
 
 }

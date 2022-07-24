@@ -21,7 +21,7 @@ public class StaffPage {
     public WebElement signInAsAStaff;
 //        MY PAGES on header
 
-    @FindBy (xpath = "(//li[@class='dropdown nav-item'])[1]") //xpath = "//li[@id='entity-menu']
+    @FindBy (xpath = "//li[@id='entity-menu']") //xpath = "//li[@id='entity-menu']
     public WebElement buttonMyPages;
 
     //    Under MY PAGES dropdowns
