@@ -21,7 +21,7 @@ public class StaffPage {
     public WebElement signInAsAStaff;
 //        MY PAGES on header
 
-    @FindBy (xpath = "(//li[@class='dropdown nav-item'])[1]") //xpath = "//li[@id='entity-menu']
+    @FindBy (xpath = "//li[@id='entity-menu']") //xpath = "//li[@id='entity-menu']
     public WebElement buttonMyPages;
 
     //    Under MY PAGES dropdowns
@@ -150,6 +150,31 @@ public class StaffPage {
 
     @FindBy (xpath = "//input[@class='form-control']")
     public WebElement sSNPatientSearchBox;
+
+    //US_23 Needs payment invoice web elements
+
+    @FindBy(xpath = "//span[text()='Payment / Invoice Process']")
+    public WebElement paymentInfoButton;
+
+    @FindBy(xpath = "//table/thead/tr[5]/th[2]")
+    public WebElement paymentInfoPageExamFeeAmount;
+
+    @FindBy(xpath = "//table/thead/tr/td/table/tbody/tr[1]/td[2]")
+    public WebElement paymentInfoPageTestItemAmount1;
+    @FindBy(xpath = "//table/thead/tr/td/table/tbody/tr[2]/td[2]")
+    public WebElement paymentInfoPageTestItemAmount2;
+    @FindBy(xpath = "//table/thead/tr/td/table/tbody/tr[3]/td[2]")
+    public WebElement paymentInfoPageTestItemAmount3;
+    @FindBy(xpath = "//table/thead/tr/td/table/tbody/tr[4]/td[2]")
+    public WebElement paymentInfoPageTestItemAmount4;
+    @FindBy(xpath = "//table/thead/tr/td/table/tbody/tr[5]/td[2]")
+    public WebElement paymentInfoPageTestItemAmount5;
+
+    @FindBy(xpath = "(//table)[1]/tbody[1]/tr[1]/td[2]")
+    public WebElement paymentInfoPageTotalAmount;
+
+    @FindBy(xpath = "//a[text()=' Show Invoice']")
+    public WebElement paymentInfoPageCreateInvoiceButton;
 
 
 }
