@@ -124,7 +124,6 @@ public class StaffPage {
     @FindBy (xpath = " //button[@type='submit']")
     public WebElement  staffEditSavePatient;
 
-    // Sefik
     @FindBy(xpath = "//tbody//tr//td[2]")
     public List<WebElement> staffSearchedSsnList;
 
@@ -175,6 +174,34 @@ public class StaffPage {
 
     @FindBy(xpath = "//select[@name='ctest.id']")
     public WebElement staffUpdateTestResultTestInput;
+
+
+    @FindBy (xpath = "//a[@class='btn btn-warning btn-sm']")
+    public WebElement editshowAppointmentsForTeamSecondPatient;
+
+    @FindBy(xpath = "//select[@id='appointment-status']")
+    public WebElement statusForTheTeamSecondPatient;
+
+    @FindBy(xpath = "//select[@id='appointment-physician']")
+    public WebElement physicanSelectBoxUnderAppointments;
+
+    @FindBy(xpath ="//button[@id='save-entity']")
+    public WebElement savePatientsDoctor;
+
+    @FindBy(xpath = "(//span[@class='d-none d-md-inline'])[3]")
+    public WebElement patientTwoShowAppointments;
+
+    @FindBy( xpath = "(//span[@class='d-none d-md-inline'])[4]")
+    public WebElement showTestForTeamEightyNineDoctor;
+
+    @FindBy (xpath = "//a[@class='btn btn-info btn-sm']")
+    public WebElement staffCanSeeTestResultButton;
+
+    @FindBy (xpath = "//*[@id='entity-menu']/div/a[1]/span")
+    public WebElement searchPatientTwo;
+
+    @FindBy (xpath = "//input[@class='form-control']")
+    public WebElement sSNPatientSearchBox;
 
 }
 
