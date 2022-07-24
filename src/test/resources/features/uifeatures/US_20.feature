@@ -1,10 +1,10 @@
 #commit for git/github
+  @US_20
 Feature:US20 User management / Activate a new user and provide necessary roles ONLY
   for Doctors and Staff by Admin
 
   Background:Admin signs in and goes to user management page
     Given us20 admin goes to medunna url
-    When us20 admin navigates the sign in page
     And us20 admin signs in
     And us20 admin clicks to Administration button
     And us20 admin clicks to User Management button
