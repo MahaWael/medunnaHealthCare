@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="2.623">
-    <testcase classname="test items" name="fetch all data of test items" time="1.988">
-        <system-out>
-            <![CDATA[Given US17 admin send a get request for test items' data....................passed
-And US17 admin deserializes the test items' data to java....................passed
-Then US17 admin saves the test items data to correspondent files and validates.passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="22.893">
+    <testcase classname="Payment Invoice by Staff" name="Staff can open invoice menu and see the fees of the test items and total cost and create invoice for the patient then should see the invoice that staff created" time="22.749">
+        <failure message="The scenario has pending or undefined step(s)" type="io.cucumber.java.PendingException">
+            <![CDATA[Given us23 staff goes to medunna url........................................passed
+And us23 staff signs in.....................................................passed
+And us23 staff clicks to My pages button....................................passed
+And us23 staff clicks to Search Patient button..............................passed
+When us23 staff enter user SSN in the SSN searchBox.........................passed
+And us23 staff clicks show appointments button..............................passed
+Then us23 staff verifies that there is a button as Payment/ Invocie Process for the completed tests.passed
+When us23 staff clicks on Payment/ Invocie Process button...................passed
+Then us23 staff verifies that exam fee and total fee and test item fees exist in this page.passed
+When us23 staff clicks on create invoice Button.............................passed
+And us23 staff clicks on create Button......................................pending
+And us23 staff enter user SSN in the SSN searchBox..........................skipped
+And us23 staff clicks show appointments button..............................skipped
+And us23 staff clicks on Payment/ Invocie Process button....................skipped
+Then us23 verify that staff can view the invoice............................skipped
 ]]>
-        </system-out>
-    </testcase>
-    <testcase classname="test items" name="fetch all data of test items" time="0.381">
-        <system-out>
-            <![CDATA[Given US17 admin send a post request to created test items' data............passed
-And US17 admin deserializes the created test items' data to java............passed
-Then US17 admin saves the test items' data to correspondent files and validates.passed
-]]>
-        </system-out>
+        </failure>
     </testcase>
 </testsuite>
