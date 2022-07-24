@@ -6,5 +6,6 @@
 extend.properties
 /utilities/
 !src/test/java/utilities/TxtWriter.java
+!src/test/java/utilities/ReusableMethods.java
 /runners/
 /hooks/
