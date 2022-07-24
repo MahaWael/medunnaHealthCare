@@ -207,4 +207,8 @@ public class HomePage {
     @FindBy(xpath = "//div[text()='This field is required.']")
     public WebElement messagesDefaultPageSubjectBoxErrorMessage;
 
+    //Birol
+    @FindBy(xpath = "//a[@id='login-item']")
+    public WebElement homeSignInButton;
+
 }
