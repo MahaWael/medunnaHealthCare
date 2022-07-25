@@ -5,6 +5,8 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.AdminPage;
 import pages.HomePage;
+import utilities.ConfigReader;
+import utilities.Driver;
 
 public class US_20_StepDefs {
     HomePage homePage = new HomePage();
@@ -12,24 +14,20 @@ public class US_20_StepDefs {
 
     @Given("us20 admin goes to medunna url")
     public void us20_admin_goes_to_medunna_url() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Driver.getDriver().get(ConfigReader.getProperty("medunna_login_url"));
     }
 
     @When("us20 admin signs in")
     public void us20_admin_signs_in() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        homePage.login(ConfigReader.getProperty("admin_username"),ConfigReader.getProperty("admin_password"));
     }
     @When("us20 admin clicks to Administration button")
     public void us20_admin_clicks_to_administration_button() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Driver.waitAndClick(adminPage.administrationButton,5);
     }
     @When("us20 admin clicks to User Management button")
     public void us20_admin_clicks_to_user_management_button() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Driver.waitAndClick(adminPage.userManagmentButtonUnderAdminidtrstion,5);
     }
     @Given("us20 admin click on view button that is for registered user")
     public void us20_admin_click_on_view_button_that_is_for_registered_user() {

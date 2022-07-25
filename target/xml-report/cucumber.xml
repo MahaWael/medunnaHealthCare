@@ -1,23 +1,493 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="22.893">
-    <testcase classname="Payment Invoice by Staff" name="Staff can open invoice menu and see the fees of the test items and total cost and create invoice for the patient then should see the invoice that staff created" time="22.749">
-        <failure message="The scenario has pending or undefined step(s)" type="io.cucumber.java.PendingException">
-            <![CDATA[Given us23 staff goes to medunna url........................................passed
-And us23 staff signs in.....................................................passed
-And us23 staff clicks to My pages button....................................passed
-And us23 staff clicks to Search Patient button..............................passed
-When us23 staff enter user SSN in the SSN searchBox.........................passed
-And us23 staff clicks show appointments button..............................passed
-Then us23 staff verifies that there is a button as Payment/ Invocie Process for the completed tests.passed
-When us23 staff clicks on Payment/ Invocie Process button...................passed
-Then us23 staff verifies that exam fee and total fee and test item fees exist in this page.passed
-When us23 staff clicks on create invoice Button.............................passed
-And us23 staff clicks on create Button......................................pending
-And us23 staff enter user SSN in the SSN searchBox..........................skipped
-And us23 staff clicks show appointments button..............................skipped
-And us23 staff clicks on Payment/ Invocie Process button....................skipped
-Then us23 verify that staff can view the invoice............................skipped
+<testsuite errors="0" failures="6" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="17" time="414.851">
+    <testcase classname="Patient Test results by Staff (Laboratory technician)" name="US_22_01" time="20.934">
+        <system-out>
+            <![CDATA[Given US22 user goes to Medunna website.....................................passed
+Then US22 user logs in as a Staff...........................................passed
+And US22 user click Search Patients link....................................passed
+Then US22 verify patients search input box is visible.......................passed
+Then US22 user enters a valid SSN "317-16-6114" into search input box.......passed
+And US22 user verify the results that searched SSN is visible...............passed
+And US22 user closes the browser............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Patient Test results by Staff (Laboratory technician)" name="US_22_01_2" time="19.185">
+        <system-out>
+            <![CDATA[Given US22 user goes to Medunna website.....................................passed
+Then US22 user logs in as a Staff...........................................passed
+And US22 user click Search Patients link....................................passed
+Then US22 verify patients search input box is visible.......................passed
+Then US22 user enters a valid SSN "321-54-4567" into search input box.......passed
+And US22 user verify the results that searched SSN is visible...............passed
+And US22 user closes the browser............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Patient Test results by Staff (Laboratory technician)" name="US_22_01_3" time="15.723">
+        <system-out>
+            <![CDATA[Given US22 user goes to Medunna website.....................................passed
+Then US22 user logs in as a Staff...........................................passed
+And US22 user click Search Patients link....................................passed
+Then US22 verify patients search input box is visible.......................passed
+Then US22 user enters a valid SSN "832-71-5231" into search input box.......passed
+And US22 user verify the results that searched SSN is visible...............passed
+And US22 user closes the browser............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Patient Test results by Staff (Laboratory technician)" name="US_22_02" time="17.91">
+        <system-out>
+            <![CDATA[Given US22 user goes to Medunna website.....................................passed
+Then US22 user logs in as a Staff...........................................passed
+And US22 user click Search Patients link....................................passed
+Then US22 verify patients search input box is visible.......................passed
+Then US22 user enters a invalid SSN "987-12-1234" into search input box.....passed
+And US22 user verify any result does not come up............................passed
+And US22 user closes the browser............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Patient Test results by Staff (Laboratory technician)" name="US_22_02_2" time="19.696">
+        <system-out>
+            <![CDATA[Given US22 user goes to Medunna website.....................................passed
+Then US22 user logs in as a Staff...........................................passed
+And US22 user click Search Patients link....................................passed
+Then US22 verify patients search input box is visible.......................passed
+Then US22 user enters a invalid SSN "987-12-7898" into search input box.....passed
+And US22 user verify any result does not come up............................passed
+And US22 user closes the browser............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Patient Test results by Staff (Laboratory technician)" name="US_22_02_3" time="20.735">
+        <system-out>
+            <![CDATA[Given US22 user goes to Medunna website.....................................passed
+Then US22 user logs in as a Staff...........................................passed
+And US22 user click Search Patients link....................................passed
+Then US22 verify patients search input box is visible.......................passed
+Then US22 user enters a invalid SSN "321-12-5436" into search input box.....passed
+And US22 user verify any result does not come up............................passed
+And US22 user closes the browser............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Patient Test results by Staff (Laboratory technician)" name="US_22_03" time="23.858">
+        <failure message="element click intercepted: Element is not clickable at point (384, 855)&#10;  (Session info: chrome=103.0.5060.134)&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'LAPTOP-8FI3PAA6', ip: '192.168.1.194', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [8278aae667d0d47157887c7ef1ade1e6, clickElement {id=45e66301-8290-403c-be5c-eaa13ccd4e41}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\mucah\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63147}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63147/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (8278aae667d0d47157887c7ef1ade1e6)] -&gt; xpath: //button[@type='submit']]&#10;Session ID: 8278aae667d0d47157887c7ef1ade1e6" type="org.openqa.selenium.ElementClickInterceptedException">
+            <![CDATA[Given US22 user goes to Medunna website.....................................passed
+Then US22 user logs in as a Staff...........................................passed
+And US22 user click Search Patients link....................................passed
+Then US22 verify patients search input box is visible.......................passed
+And US22 user clicks first patient's show appointments button...............passed
+And US22 verify appointments page is visible................................passed
+And US22 user clicks first show tests button................................passed
+And US22 user verify tests page is visible..................................passed
+And US22 user clicks first test view result button..........................passed
+And US22 verify test results page is visible................................passed
+And US22 user clicks first test's edit button...............................passed
+And US22 verify  test result update page is visible.........................passed
+And US22 user enters a number "80" into result input box....................passed
+And US22 user click save....................................................failed
+And US22 verify the test result is updated message comes up.................skipped
+And US22 verify the test result is updated..................................skipped
+And US22 user closes the browser............................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (384, 855)
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'LAPTOP-8FI3PAA6', ip: '192.168.1.194', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8278aae667d0d47157887c7ef1ade1e6, clickElement {id=45e66301-8290-403c-be5c-eaa13ccd4e41}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\mucah\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63147}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63147/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (8278aae667d0d47157887c7ef1ade1e6)] -> xpath: //button[@type='submit']]
+Session ID: 8278aae667d0d47157887c7ef1ade1e6
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at jdk.internal.reflect.GeneratedMethodAccessor70.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at stepdefinitions.uistepdefs.US_22.us22_user_click_save(US_22.java:158)
+	at ✽.US22 user click save(file:///C:/Users/mucah/IdeaProjects/medunnahealthcare/./src/test/resources/features/uifeatures/US_22.feature:52)
 ]]>
         </failure>
+    </testcase>
+    <testcase classname="Patient Test results by Staff (Laboratory technician)" name="US_22_03_2" time="26.336">
+        <failure message="element click intercepted: Element is not clickable at point (384, 855)&#10;  (Session info: chrome=103.0.5060.134)&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'LAPTOP-8FI3PAA6', ip: '192.168.1.194', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [f5e375690d9f87b1c9a33232a2522f89, clickElement {id=560f94f7-877f-451c-b248-a6d8f0dd310d}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\mucah\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63178}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63178/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (f5e375690d9f87b1c9a33232a2522f89)] -&gt; xpath: //button[@type='submit']]&#10;Session ID: f5e375690d9f87b1c9a33232a2522f89" type="org.openqa.selenium.ElementClickInterceptedException">
+            <![CDATA[Given US22 user goes to Medunna website.....................................passed
+Then US22 user logs in as a Staff...........................................passed
+And US22 user click Search Patients link....................................passed
+Then US22 verify patients search input box is visible.......................passed
+And US22 user clicks first patient's show appointments button...............passed
+And US22 verify appointments page is visible................................passed
+And US22 user clicks first show tests button................................passed
+And US22 user verify tests page is visible..................................passed
+And US22 user clicks first test view result button..........................passed
+And US22 verify test results page is visible................................passed
+And US22 user clicks first test's edit button...............................passed
+And US22 verify  test result update page is visible.........................passed
+And US22 user enters a number "60" into result input box....................passed
+And US22 user click save....................................................failed
+And US22 verify the test result is updated message comes up.................skipped
+And US22 verify the test result is updated..................................skipped
+And US22 user closes the browser............................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (384, 855)
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'LAPTOP-8FI3PAA6', ip: '192.168.1.194', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f5e375690d9f87b1c9a33232a2522f89, clickElement {id=560f94f7-877f-451c-b248-a6d8f0dd310d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\mucah\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63178}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63178/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f5e375690d9f87b1c9a33232a2522f89)] -> xpath: //button[@type='submit']]
+Session ID: f5e375690d9f87b1c9a33232a2522f89
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at jdk.internal.reflect.GeneratedMethodAccessor70.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at stepdefinitions.uistepdefs.US_22.us22_user_click_save(US_22.java:158)
+	at ✽.US22 user click save(file:///C:/Users/mucah/IdeaProjects/medunnahealthcare/./src/test/resources/features/uifeatures/US_22.feature:52)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Patient Test results by Staff (Laboratory technician)" name="US_22_03_3" time="32.263">
+        <failure message="element click intercepted: Element is not clickable at point (384, 855)&#10;  (Session info: chrome=103.0.5060.134)&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'LAPTOP-8FI3PAA6', ip: '192.168.1.194', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [81128060318eae9d974227c56aba4f7a, clickElement {id=a9c22f3c-0f67-4b82-8fc7-f57804ee520a}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\mucah\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63214}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63214/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (81128060318eae9d974227c56aba4f7a)] -&gt; xpath: //button[@type='submit']]&#10;Session ID: 81128060318eae9d974227c56aba4f7a" type="org.openqa.selenium.ElementClickInterceptedException">
+            <![CDATA[Given US22 user goes to Medunna website.....................................passed
+Then US22 user logs in as a Staff...........................................passed
+And US22 user click Search Patients link....................................passed
+Then US22 verify patients search input box is visible.......................passed
+And US22 user clicks first patient's show appointments button...............passed
+And US22 verify appointments page is visible................................passed
+And US22 user clicks first show tests button................................passed
+And US22 user verify tests page is visible..................................passed
+And US22 user clicks first test view result button..........................passed
+And US22 verify test results page is visible................................passed
+And US22 user clicks first test's edit button...............................passed
+And US22 verify  test result update page is visible.........................passed
+And US22 user enters a number "50" into result input box....................passed
+And US22 user click save....................................................failed
+And US22 verify the test result is updated message comes up.................skipped
+And US22 verify the test result is updated..................................skipped
+And US22 user closes the browser............................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (384, 855)
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'LAPTOP-8FI3PAA6', ip: '192.168.1.194', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [81128060318eae9d974227c56aba4f7a, clickElement {id=a9c22f3c-0f67-4b82-8fc7-f57804ee520a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\mucah\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63214}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63214/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (81128060318eae9d974227c56aba4f7a)] -> xpath: //button[@type='submit']]
+Session ID: 81128060318eae9d974227c56aba4f7a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at jdk.internal.reflect.GeneratedMethodAccessor70.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at stepdefinitions.uistepdefs.US_22.us22_user_click_save(US_22.java:158)
+	at ✽.US22 user click save(file:///C:/Users/mucah/IdeaProjects/medunnahealthcare/./src/test/resources/features/uifeatures/US_22.feature:52)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Patient Test results by Staff (Laboratory technician)" name="US_22_04" time="30.481">
+        <failure message="element click intercepted: Element is not clickable at point (384, 855)&#10;  (Session info: chrome=103.0.5060.134)&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'LAPTOP-8FI3PAA6', ip: '192.168.1.194', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [6b91c5551d5cadd40a3c56e4d46fbb80, clickElement {id=1daa5fd4-6f1a-4279-82dc-6ce6fa6684da}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\mucah\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63246}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63246/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (6b91c5551d5cadd40a3c56e4d46fbb80)] -&gt; xpath: //button[@type='submit']]&#10;Session ID: 6b91c5551d5cadd40a3c56e4d46fbb80" type="org.openqa.selenium.ElementClickInterceptedException">
+            <![CDATA[Given US22 user goes to Medunna website.....................................passed
+Then US22 user logs in as a Staff...........................................passed
+And US22 user click Search Patients link....................................passed
+Then US22 verify patients search input box is visible.......................passed
+And US22 user clicks first patient's show appointments button...............passed
+And US22 verify appointments page is visible................................passed
+And US22 user clicks first show tests button................................passed
+And US22 user verify tests page is visible..................................passed
+And US22 user clicks first test view result button..........................passed
+And US22 verify test results page is visible................................passed
+And US22 user clicks first test's edit button...............................passed
+And US22 verify  test result update page is visible.........................passed
+And US22 user enters a description "Calcitonin Test" into description input box.passed
+And US22 user click save....................................................failed
+And US22 verify the test description is updated message comes up............skipped
+And US22 verify the test description is updated.............................skipped
+And US22 user closes the browser............................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (384, 855)
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'LAPTOP-8FI3PAA6', ip: '192.168.1.194', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6b91c5551d5cadd40a3c56e4d46fbb80, clickElement {id=1daa5fd4-6f1a-4279-82dc-6ce6fa6684da}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\mucah\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63246}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63246/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (6b91c5551d5cadd40a3c56e4d46fbb80)] -> xpath: //button[@type='submit']]
+Session ID: 6b91c5551d5cadd40a3c56e4d46fbb80
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at jdk.internal.reflect.GeneratedMethodAccessor70.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at stepdefinitions.uistepdefs.US_22.us22_user_click_save(US_22.java:158)
+	at ✽.US22 user click save(file:///C:/Users/mucah/IdeaProjects/medunnahealthcare/./src/test/resources/features/uifeatures/US_22.feature:78)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Patient Test results by Staff (Laboratory technician)" name="US_22_04_2" time="32.326">
+        <failure message="element click intercepted: Element is not clickable at point (384, 855)&#10;  (Session info: chrome=103.0.5060.134)&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'LAPTOP-8FI3PAA6', ip: '192.168.1.194', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [ae2ea0558230871037b1fd16e0ee78a4, clickElement {id=628ad3ae-0d23-49d2-a1f1-e892301dcfea}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\mucah\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63283}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63283/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (ae2ea0558230871037b1fd16e0ee78a4)] -&gt; xpath: //button[@type='submit']]&#10;Session ID: ae2ea0558230871037b1fd16e0ee78a4" type="org.openqa.selenium.ElementClickInterceptedException">
+            <![CDATA[Given US22 user goes to Medunna website.....................................passed
+Then US22 user logs in as a Staff...........................................passed
+And US22 user click Search Patients link....................................passed
+Then US22 verify patients search input box is visible.......................passed
+And US22 user clicks first patient's show appointments button...............passed
+And US22 verify appointments page is visible................................passed
+And US22 user clicks first show tests button................................passed
+And US22 user verify tests page is visible..................................passed
+And US22 user clicks first test view result button..........................passed
+And US22 verify test results page is visible................................passed
+And US22 user clicks first test's edit button...............................passed
+And US22 verify  test result update page is visible.........................passed
+And US22 user enters a description "CCP Antibody Test" into description input box.passed
+And US22 user click save....................................................failed
+And US22 verify the test description is updated message comes up............skipped
+And US22 verify the test description is updated.............................skipped
+And US22 user closes the browser............................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (384, 855)
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'LAPTOP-8FI3PAA6', ip: '192.168.1.194', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ae2ea0558230871037b1fd16e0ee78a4, clickElement {id=628ad3ae-0d23-49d2-a1f1-e892301dcfea}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\mucah\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63283}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63283/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (ae2ea0558230871037b1fd16e0ee78a4)] -> xpath: //button[@type='submit']]
+Session ID: ae2ea0558230871037b1fd16e0ee78a4
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at jdk.internal.reflect.GeneratedMethodAccessor70.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at stepdefinitions.uistepdefs.US_22.us22_user_click_save(US_22.java:158)
+	at ✽.US22 user click save(file:///C:/Users/mucah/IdeaProjects/medunnahealthcare/./src/test/resources/features/uifeatures/US_22.feature:78)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Patient Test results by Staff (Laboratory technician)" name="US_22_04_3" time="26.824">
+        <failure message="element click intercepted: Element is not clickable at point (384, 855)&#10;  (Session info: chrome=103.0.5060.134)&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'LAPTOP-8FI3PAA6', ip: '192.168.1.194', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [1b43de3e49d7217438918c15741c98c8, clickElement {id=4a496213-1cf3-4d31-9659-71b944997416}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\mucah\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63317}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63317/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (1b43de3e49d7217438918c15741c98c8)] -&gt; xpath: //button[@type='submit']]&#10;Session ID: 1b43de3e49d7217438918c15741c98c8" type="org.openqa.selenium.ElementClickInterceptedException">
+            <![CDATA[Given US22 user goes to Medunna website.....................................passed
+Then US22 user logs in as a Staff...........................................passed
+And US22 user click Search Patients link....................................passed
+Then US22 verify patients search input box is visible.......................passed
+And US22 user clicks first patient's show appointments button...............passed
+And US22 verify appointments page is visible................................passed
+And US22 user clicks first show tests button................................passed
+And US22 user verify tests page is visible..................................passed
+And US22 user clicks first test view result button..........................passed
+And US22 verify test results page is visible................................passed
+And US22 user clicks first test's edit button...............................passed
+And US22 verify  test result update page is visible.........................passed
+And US22 user enters a description "Dental Exam" into description input box.passed
+And US22 user click save....................................................failed
+And US22 verify the test description is updated message comes up............skipped
+And US22 verify the test description is updated.............................skipped
+And US22 user closes the browser............................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (384, 855)
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'LAPTOP-8FI3PAA6', ip: '192.168.1.194', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1b43de3e49d7217438918c15741c98c8, clickElement {id=4a496213-1cf3-4d31-9659-71b944997416}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\mucah\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63317}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63317/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (1b43de3e49d7217438918c15741c98c8)] -> xpath: //button[@type='submit']]
+Session ID: 1b43de3e49d7217438918c15741c98c8
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at jdk.internal.reflect.GeneratedMethodAccessor70.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at stepdefinitions.uistepdefs.US_22.us22_user_click_save(US_22.java:158)
+	at ✽.US22 user click save(file:///C:/Users/mucah/IdeaProjects/medunnahealthcare/./src/test/resources/features/uifeatures/US_22.feature:78)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Patient Test results by Staff (Laboratory technician)" name="US_22_05" time="27.51">
+        <system-out>
+            <![CDATA[Given US22 user goes to Medunna website.....................................passed
+Then US22 user logs in as a Staff...........................................passed
+And US22 user click Search Patients link....................................passed
+Then US22 verify patients search input box is visible.......................passed
+And US22 user clicks first patient's show appointments button...............passed
+And US22 verify appointments page is visible................................passed
+And US22 user clicks first show tests button................................passed
+And US22 user verify tests page is visible..................................passed
+And US22 user clicks first test view result button..........................passed
+And US22 verify test results page is visible................................passed
+And US22 user clicks first test's edit button...............................passed
+And US22 verify  test result update page is visible.........................passed
+And US22 verify test id is visible..........................................passed
+And US22 verify test id is not updatable....................................passed
+And US22 user closes the browser............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Patient Test results by Staff (Laboratory technician)" name="US_22_06" time="23.854">
+        <system-out>
+            <![CDATA[Given US22 user goes to Medunna website.....................................passed
+Then US22 user logs in as a Staff...........................................passed
+And US22 user click Search Patients link....................................passed
+Then US22 verify patients search input box is visible.......................passed
+And US22 user clicks first patient's show appointments button...............passed
+And US22 verify appointments page is visible................................passed
+And US22 user clicks first show tests button................................passed
+And US22 user verify tests page is visible..................................passed
+And US22 user clicks first test view result button..........................passed
+And US22 verify test results page is visible................................passed
+And US22 user clicks first test's edit button...............................passed
+And US22 verify  test result update page is visible.........................passed
+And US22 verify test date is visible........................................passed
+And US22 verify test date is not updatable..................................passed
+And US22 user closes the browser............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Patient Test results by Staff (Laboratory technician)" name="US_22_07" time="24.311">
+        <system-out>
+            <![CDATA[Given US22 user goes to Medunna website.....................................passed
+Then US22 user logs in as a Staff...........................................passed
+And US22 user click Search Patients link....................................passed
+Then US22 verify patients search input box is visible.......................passed
+And US22 user clicks first patient's show appointments button...............passed
+And US22 verify appointments page is visible................................passed
+And US22 user clicks first show tests button................................passed
+And US22 user verify tests page is visible..................................passed
+And US22 user clicks first test view result button..........................passed
+And US22 verify test results page is visible................................passed
+And US22 user clicks first test's edit button...............................passed
+And US22 verify  test result update page is visible.........................passed
+And US22 verify test created date is visible................................passed
+And US22 verify test created date is not updatable..........................passed
+And US22 user closes the browser............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Patient Test results by Staff (Laboratory technician)" name="US_22_08" time="28.621">
+        <system-out>
+            <![CDATA[Given US22 user goes to Medunna website.....................................passed
+Then US22 user logs in as a Staff...........................................passed
+And US22 user click Search Patients link....................................passed
+Then US22 verify patients search input box is visible.......................passed
+And US22 user clicks first patient's show appointments button...............passed
+And US22 verify appointments page is visible................................passed
+And US22 user clicks first show tests button................................passed
+And US22 user verify tests page is visible..................................passed
+And US22 user clicks first test view result button..........................passed
+And US22 verify test results page is visible................................passed
+And US22 user clicks first test's edit button...............................passed
+And US22 verify  test result update page is visible.........................passed
+And US22 verify test item is visible........................................passed
+And US22 verify test item is not updatable..................................passed
+And US22 user closes the browser............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Patient Test results by Staff (Laboratory technician)" name="US_22_09" time="23.777">
+        <system-out>
+            <![CDATA[Given US22 user goes to Medunna website.....................................passed
+Then US22 user logs in as a Staff...........................................passed
+And US22 user click Search Patients link....................................passed
+Then US22 verify patients search input box is visible.......................passed
+And US22 user clicks first patient's show appointments button...............passed
+And US22 verify appointments page is visible................................passed
+And US22 user clicks first show tests button................................passed
+And US22 user verify tests page is visible..................................passed
+And US22 user clicks first test view result button..........................passed
+And US22 verify test results page is visible................................passed
+And US22 user clicks first test's edit button...............................passed
+And US22 verify  test result update page is visible.........................passed
+And US22 verify test  is visible............................................passed
+And US22 verify test  is not updatable......................................passed
+And US22 user closes the browser............................................passed
+]]>
+        </system-out>
     </testcase>
 </testsuite>
