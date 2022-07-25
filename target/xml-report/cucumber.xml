@@ -1,107 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="28.94">
-    <testcase classname="Staff can update patient appointments" name="US_21_08_staff_edit_patient" time="17.504">
-        <failure message="element not interactable&#10;  (Session info: chrome=103.0.5060.134)&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'LAPTOP-8FI3PAA6', ip: '192.168.1.194', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [43e2c96767b4159eac6824ba16c15c8f, clickElement {id=27a7d7c4-55e4-4338-b547-f72474964feb}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\mucah\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55515}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55515/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (43e2c96767b4159eac6824ba16c15c8f)] -&gt; xpath: (//a[@class='dropdown-item'])[1]]&#10;Session ID: 43e2c96767b4159eac6824ba16c15c8f" type="org.openqa.selenium.ElementNotInteractableException">
-            <![CDATA[Given US21 user goes to medunna url.........................................passed
-When US21 user navigates to profile icon and clicks it......................passed
-And US21 user click sign in button..........................................passed
-Then US21 click username field..............................................passed
-And US21 user enters usernameUS21 "team89staff01" as staff..................passed
-And US21 user enters passwordUS21 "team89staff" as staff....................passed
-Then US21 user clicks Sign-in button........................................passed
-And US21 user navigates to MY PAGES Button and  click it....................passed
-And US21 click search patient button from dropdown..........................failed
-Then US21 User Enters valid SSN number "890-12-4324"........................skipped
-And US21 User navigates to Show Appointments of patient and clicks..........skipped
-And US21 User clicks the edit button of the first appointment...............skipped
-Then US21 User can update the status "CANCELLED" CANCELLED , "PENDING" PENDING or "UNAPPROVED" UNAPPROVED.skipped
-And US21 User selects the doctor who is the current doctor..................skipped
-Then US21 User clicks Save button and verifies that is saved................skipped
-And US21  Staff close the application.......................................skipped
-
-StackTrace:
-org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=103.0.5060.134)
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'LAPTOP-8FI3PAA6', ip: '192.168.1.194', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [43e2c96767b4159eac6824ba16c15c8f, clickElement {id=27a7d7c4-55e4-4338-b547-f72474964feb}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\mucah\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55515}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55515/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (43e2c96767b4159eac6824ba16c15c8f)] -> xpath: (//a[@class='dropdown-item'])[1]]
-Session ID: 43e2c96767b4159eac6824ba16c15c8f
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy23.click(Unknown Source)
-	at stepdefinitions.uistepdefs.US_21_StepDefs.us21_click_search_patient_button_from_dropdown(US_21_StepDefs.java:58)
-	at ✽.US21 click search patient button from dropdown(file:///C:/Users/mucah/IdeaProjects/medunnahealthcare/./src/test/resources/features/uifeatures/US_21.feature:16)
-]]>
-        </failure>
-    </testcase>
-    <testcase classname="Staff can update patient appointments" name="US_21_08_staff_edit_patient_2" time="11.276">
-        <failure message="element not interactable&#10;  (Session info: chrome=103.0.5060.134)&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'LAPTOP-8FI3PAA6', ip: '192.168.1.194', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [c8d68714a12c9f001017d35b825d7b2c, clickElement {id=c1c6e788-fbaf-4daf-8710-9fce3436b79c}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\mucah\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55551}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55551/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (c8d68714a12c9f001017d35b825d7b2c)] -&gt; xpath: (//a[@class='dropdown-item'])[1]]&#10;Session ID: c8d68714a12c9f001017d35b825d7b2c" type="org.openqa.selenium.ElementNotInteractableException">
-            <![CDATA[Given US21 user goes to medunna url.........................................passed
-When US21 user navigates to profile icon and clicks it......................passed
-And US21 user click sign in button..........................................passed
-Then US21 click username field..............................................passed
-And US21 user enters usernameUS21 "team89staff01" as staff..................passed
-And US21 user enters passwordUS21 "team89staff" as staff....................passed
-Then US21 user clicks Sign-in button........................................passed
-And US21 user navigates to MY PAGES Button and  click it....................passed
-And US21 click search patient button from dropdown..........................failed
-Then US21 User Enters valid SSN number "890-12-4324"........................skipped
-And US21 User navigates to Show Appointments of patient and clicks..........skipped
-Then US21 User clicks Show Tests button.....................................skipped
-And US21 User clicks View Results button....................................skipped
-Then US21 Verify that user can see Test Results.............................skipped
-And US21  Staff close the application.......................................skipped
-
-StackTrace:
-org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=103.0.5060.134)
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'LAPTOP-8FI3PAA6', ip: '192.168.1.194', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c8d68714a12c9f001017d35b825d7b2c, clickElement {id=c1c6e788-fbaf-4daf-8710-9fce3436b79c}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\mucah\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55551}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55551/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (c8d68714a12c9f001017d35b825d7b2c)] -> xpath: (//a[@class='dropdown-item'])[1]]
-Session ID: c8d68714a12c9f001017d35b825d7b2c
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy23.click(Unknown Source)
-	at stepdefinitions.uistepdefs.US_21_StepDefs.us21_click_search_patient_button_from_dropdown(US_21_StepDefs.java:58)
-	at ✽.US21 click search patient button from dropdown(file:///C:/Users/mucah/IdeaProjects/medunnahealthcare/./src/test/resources/features/uifeatures/US_21.feature:35)
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="22.893">
+    <testcase classname="Payment Invoice by Staff" name="Staff can open invoice menu and see the fees of the test items and total cost and create invoice for the patient then should see the invoice that staff created" time="22.749">
+        <failure message="The scenario has pending or undefined step(s)" type="io.cucumber.java.PendingException">
+            <![CDATA[Given us23 staff goes to medunna url........................................passed
+And us23 staff signs in.....................................................passed
+And us23 staff clicks to My pages button....................................passed
+And us23 staff clicks to Search Patient button..............................passed
+When us23 staff enter user SSN in the SSN searchBox.........................passed
+And us23 staff clicks show appointments button..............................passed
+Then us23 staff verifies that there is a button as Payment/ Invocie Process for the completed tests.passed
+When us23 staff clicks on Payment/ Invocie Process button...................passed
+Then us23 staff verifies that exam fee and total fee and test item fees exist in this page.passed
+When us23 staff clicks on create invoice Button.............................passed
+And us23 staff clicks on create Button......................................pending
+And us23 staff enter user SSN in the SSN searchBox..........................skipped
+And us23 staff clicks show appointments button..............................skipped
+And us23 staff clicks on Payment/ Invocie Process button....................skipped
+Then us23 verify that staff can view the invoice............................skipped
 ]]>
         </failure>
     </testcase>

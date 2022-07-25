@@ -426,6 +426,75 @@ public class AdminPage {
     //If you need any new WebElement please create at the bottom of the class
     //Create your new WebElements under this comment
 
+    // Birol
+    @FindBy (xpath = "//span[normalize-space()='Country']")
+    public WebElement countryDropDown;
+    @FindBy (xpath = "//input[@id='country-name']")
+    public WebElement sendCountryName;
+    @FindBy (xpath = "//span[normalize-space()='Save']")
+    public WebElement saveCountryButton;
+    @FindBy (xpath = "//div[@role='alert']")
+    public WebElement countrySavedPopUp;
+    @FindBy (xpath = "(//*[name()='path'][@fill='currentColor'])[1]")
+    public WebElement homeIcon;
+    @FindBy (xpath = "(//a)[1039]")
+    public WebElement viewCountryDetailsButton;
+    @FindBy (xpath = "//dd[normalize-space()='Alabama']")
+    public WebElement viewCountryAlabama;
+    @FindBy (xpath = "(//a)[1040]")
+    public WebElement countryEditButton;
+    @FindBy (xpath = "//input[@id='country-name']")
+    public WebElement countryEditCountryNameBox;
+    @FindBy (xpath = "(//a)[693]") //orjinal 1041 olacak bak yine de
+    public WebElement countryDeleteButton;
+    @FindBy (xpath = "//button[@id='jhi-confirm-delete-country']")
+    public WebElement countryDeleteConfirmButton;
+    @FindBy (xpath = "//div[@role='alert']")
+    public WebElement countryDeletedPopUp;
+    @FindBy(xpath = "//span[normalize-space()='Items&Titles']")
+    public WebElement ItemsAndTitles;
+
+
+    // these web elements belong to Seher
+
+    @FindBy(xpath = "(//*[text()='Test Item'])[1]")
+    public WebElement adminTestItemDropDownButton;
+
+    //under create new test item button
+
+    @FindBy(xpath = "//input[@id='c-test-item-name']")
+    public WebElement adminPageCreateOrEditTestItemNameBox;
+
+    @FindBy(xpath = "//input[@id='c-test-item-description']")
+    public WebElement adminPageCreateOrEditTestItemDescriptionBox;
+
+    @FindBy(xpath = "//input[@id='c-test-item-price']")
+    public WebElement adminPageCreateOrEditTestItemPriceBox;
+
+    @FindBy(xpath = "//input[@id='c-test-item-defaultValMin']")
+    public WebElement adminPageCreateOrEditTestItemDefaultMinValueBox;
+
+    @FindBy(xpath = "//input[@id='c-test-item-defaultValMax']")
+    public WebElement adminPageCreateOrEditTestItemDefaultMaxValueBox;
+
+    @FindBy(xpath = "//*[text()='Save']")
+    public WebElement adminPageCreateOrEditTestItemSaveButton;
+
+    @FindBy(xpath = "//*[contains(text(),'A new Test Item is created with identifier')]")
+    public WebElement adminPageCreateOrEditTestItemPopUpMessage;
+
+    @FindBy(xpath = "//*[text()='Internal server error.']")
+    public WebElement adminPageCreateOrEditTestItemAlertMessage;
+
+    //View test item page header
+    @FindBy(xpath = "(//*[text()='Test Item'])[2]")
+    public WebElement adminPageViewTestItemHeader;
+
+    @FindBy(xpath = "/html/body/div[2]/div/div[1]/div/div/div[3]/button[2]/span")
+    public WebElement adminPageTestItemConfirmDeleteOperationButton;
+
+
+
 
 
 
