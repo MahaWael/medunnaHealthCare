@@ -73,6 +73,7 @@ public class Hooks {
         spec = new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("base_url")).build();
 
     }
+    /*
     @After
     public void tearDown(Scenario scenario){
         if (scenario.isFailed()) {
@@ -81,5 +82,7 @@ public class Hooks {
         }
         Driver.closeDriver();
     }
+
+     */
 
 }
