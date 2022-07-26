@@ -1,5 +1,6 @@
 package utilities;
 import pojos.Appointment_01;
+import pojos.US09_PatientPojo;
 import pojos.US17_TestItemsPojo;
 
 import java.io.BufferedWriter;
@@ -29,7 +30,7 @@ public class TxtWriter {
         }
     }
 
-    public static void saveAPITestItemData(US17_TestItemsPojo [] testItemsPojos) {
+    public static void saveAPITestItemData(US17_TestItemsPojo[] testItemsPojos) {
         try {
 
             //file creation
@@ -40,9 +41,9 @@ public class TxtWriter {
             //records creation
             BufferedWriter bw = new BufferedWriter(fw);
 
-            for(int i=0;i <testItemsPojos.length;i++){
+            for (int i = 0; i < testItemsPojos.length; i++) {
 
-                bw.append(testItemsPojos[i].toString()+"\n");
+                bw.append(testItemsPojos[i].toString() + "\n");
 
             }
 
@@ -53,6 +54,7 @@ public class TxtWriter {
             e.printStackTrace();
         }
     }
+
     public static void saveUiPatientData(Appointment_01 appointment) {
         try {
             FileWriter fw = new FileWriter(ConfigReader.getProperty("applicant_data"), true);
@@ -65,14 +67,15 @@ public class TxtWriter {
             e.printStackTrace();
         }
     }
+
     public static void saveAPIPatientData(Appointment_01[] appointments) {
         try {
             FileWriter fw = new FileWriter(ConfigReader.getProperty("applicants_api_data"), true);
             //  file location
             //  location + fileName + txt
             BufferedWriter bw = new BufferedWriter(fw);
-            for(int i=0; i< appointments.length;i++){
-                bw.append(appointments[i].toString()+"\n");
+            for (int i = 0; i < appointments.length; i++) {
+                bw.append(appointments[i].toString() + "\n");
             }
             bw.close();
         } catch (Exception e) {
@@ -80,6 +83,24 @@ public class TxtWriter {
         }
     }
 
+    public static void savePatientApiData(US09_PatientPojo[] us09patient) {
+        try {
+            FileWriter fw = new FileWriter(ConfigReader.getProperty("patientus09_api_data"), true);
 
-    //TxtWriter commit try
+            BufferedWriter bw = new BufferedWriter(fw);
+            for (int i = 0; i < us09patient.length; i++) {
+                bw.append(us09patient[i].toString() + "\n");
+            }
+
+            bw.append(us09patient.toString() + "\n");
+            bw.close();
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
+        //TxtWriter commit try
+    }
 }
