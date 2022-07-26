@@ -486,6 +486,13 @@ public class AdminPage {
     @FindBy(xpath = "//*[text()='Internal server error.']")
     public WebElement adminPageCreateOrEditTestItemAlertMessage;
 
+    @FindBy(xpath = "//*[text()='Created Date']")
+    public WebElement createdDateChange;
+
+    @FindBy(xpath = "//*[contains(text(),'A Test Item is deleted with identifier')]")
+    public WebElement ATestItemIsDeletedWithIdentifier;
+
+
     //View test item page header
     @FindBy(xpath = "(//*[text()='Test Item'])[2]")
     public WebElement adminPageViewTestItemHeader;
