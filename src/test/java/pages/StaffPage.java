@@ -228,6 +228,9 @@ public class StaffPage {
     @FindBy(xpath = "//a[text()=' Show Invoice']")
     public WebElement paymentInfoPageCreateInvoiceButton;
 
+    @FindBy (xpath = "//input[@name='ssn']")
+    public WebElement searchBoxSSNPatientSearch;
+
 
 }
 

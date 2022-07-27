@@ -493,7 +493,11 @@ public class AdminPage {
     @FindBy(xpath = "/html/body/div[2]/div/div[1]/div/div/div[3]/button[2]/span")
     public WebElement adminPageTestItemConfirmDeleteOperationButton;
 
+    @FindBy(xpath = "//li[@id='entity-menu']")
+    public WebElement adminItemsandTitles;
 
+    @FindBy (xpath= "(//div[@role='menu'])[2]")
+    public WebElement userManagementDropDownUnderAdmin;
 
 
 

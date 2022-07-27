@@ -37,6 +37,7 @@ Feature: Admin
     And US09 Verify user in patient page
     And US09 user enters firstname and lastname bithdate email phone gender blood group address description User Country State
     And US09 click Save
+    Then US09 verify that pop up visible on the left corner
     And US09 close the application
     Examples:
       |username|password|
@@ -49,7 +50,6 @@ Feature: Admin
     And US09 user enters password "<password>"
     And US09 user clicks Sign-in button in the pop-up page
     And US09 click Administration button
-    Then US09 Verify that User management button is visible
     And US09 click User mamagement button
     Then US09 verify that user is in Users page
     Then US09 verify that SSN search box is visible

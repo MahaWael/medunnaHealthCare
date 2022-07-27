@@ -1,23 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="22.893">
-    <testcase classname="Payment Invoice by Staff" name="Staff can open invoice menu and see the fees of the test items and total cost and create invoice for the patient then should see the invoice that staff created" time="22.749">
-        <failure message="The scenario has pending or undefined step(s)" type="io.cucumber.java.PendingException">
-            <![CDATA[Given us23 staff goes to medunna url........................................passed
-And us23 staff signs in.....................................................passed
-And us23 staff clicks to My pages button....................................passed
-And us23 staff clicks to Search Patient button..............................passed
-When us23 staff enter user SSN in the SSN searchBox.........................passed
-And us23 staff clicks show appointments button..............................passed
-Then us23 staff verifies that there is a button as Payment/ Invocie Process for the completed tests.passed
-When us23 staff clicks on Payment/ Invocie Process button...................passed
-Then us23 staff verifies that exam fee and total fee and test item fees exist in this page.passed
-When us23 staff clicks on create invoice Button.............................passed
-And us23 staff clicks on create Button......................................pending
-And us23 staff enter user SSN in the SSN searchBox..........................skipped
-And us23 staff clicks show appointments button..............................skipped
-And us23 staff clicks on Payment/ Invocie Process button....................skipped
-Then us23 verify that staff can view the invoice............................skipped
-]]>
-        </failure>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="66.273">
+    <testcase classname="Staff can update patient appointments" name="US_21_08_staff_edit_patient" time="44.777">
+        <system-out><![CDATA[Given US21 user goes to medunna url.........................................passed
+When US21 user navigates to profile icon and clicks it......................passed
+And US21 user click sign in button..........................................passed
+Then US21 click username field..............................................passed
+And US21 user enters usernameUS21 "team89staff01" as staff..................passed
+And US21 user enters passwordUS21 "team89staff" as staff....................passed
+Then US21 user clicks Sign-in button........................................passed
+And US21 user navigates to MY PAGES Button and  click it....................passed
+And US21 click search patient button from dropdown..........................passed
+Then US21 User Enters valid SSN number "890-12-4324"........................passed
+And US21 User navigates to Show Appointments of patient and clicks..........passed
+And US21 User clicks the edit button of the first appointment...............passed
+Then US21 User can update the status "CANCELLED" CANCELLED , "PENDING" PENDING or "UNAPPROVED" UNAPPROVED.passed
+And US21 User selects the current doctor whose doctor value "115993"........passed
+Then US21 User clicks Save button and verifies that is saved................passed
+And US21  Staff close the application.......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Staff can update patient appointments" name="US_21_08_staff_edit_patient_2" time="21.278">
+        <system-out><![CDATA[Given US21 user goes to medunna url.........................................passed
+When US21 user navigates to profile icon and clicks it......................passed
+And US21 user click sign in button..........................................passed
+Then US21 click username field..............................................passed
+And US21 user enters usernameUS21 "team89staff01" as staff..................passed
+And US21 user enters passwordUS21 "team89staff" as staff....................passed
+Then US21 user clicks Sign-in button........................................passed
+And US21 user navigates to MY PAGES Button and  click it....................passed
+And US21 click search patient button from dropdown..........................passed
+Then US21 User Enters valid SSN number "890-12-4324"........................passed
+And US21 User navigates to Show Appointments of patient and clicks..........passed
+Then US21 User clicks Show Tests button.....................................passed
+And US21 User clicks View Results button....................................passed
+Then US21 Verify that user can see Test Results.............................passed
+And US21  Staff close the application.......................................passed
+]]></system-out>
     </testcase>
 </testsuite>

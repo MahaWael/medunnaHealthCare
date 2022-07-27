@@ -1,7 +1,5 @@
 package utilities;
-import pojos.Appointment_01;
-import pojos.US09_PatientPojo;
-import pojos.US17_TestItemsPojo;
+import pojos.*;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -99,8 +97,10 @@ public class TxtWriter {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
 
 
         //TxtWriter commit try
+
     }
-}
+

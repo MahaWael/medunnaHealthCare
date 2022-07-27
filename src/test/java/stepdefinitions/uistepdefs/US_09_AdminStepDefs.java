@@ -66,8 +66,9 @@ public class US_09_AdminStepDefs {
     }
     @Then("US09 click Items&Titles button us09")
     public void US09_click_items_titles_button_us09() {
-        adminPage.itemsAndTitles.click();
         Driver.wait(2);
+        adminPage.adminItemsandTitles.click();
+        Driver.wait(4);
     }
     @Then("US09 click Patient button us09")
     public void US09_click_patient_button_us09() {
@@ -102,7 +103,8 @@ public class US_09_AdminStepDefs {
     }
     @Then("US09 click User management button")
     public void US09_click_user_management_button() {
-        adminPage.userManagmentButtonUnderAdminidtrstion.click();
+        Driver.wait(2);
+        adminPage.userManagementDropDownUnderAdmin.click();
     }
     @Then("US09 click Edit button for the first patient")
     public void US09_click_edit_button_for_the_first_patient() {
@@ -112,7 +114,7 @@ public class US_09_AdminStepDefs {
     @Then("US09 user goes to last users page")
     public void US09_user_goes_to_last_users_page() {
         JSUtils.scrollIntoViewJS(Driver.getDriver().findElement(By.xpath("(//a[@href='javascript:void(0)'])[8]")));
-        Driver.wait(4);
+        Driver.wait(3);
     }
     @Then("US09 click Delete button of the last patient on the first page")
     public void US09_click_delete_button_of_the_last_patient_on_the_first_page() {
@@ -130,20 +132,22 @@ public class US_09_AdminStepDefs {
     }
     @Then("US09 click Administration button")
     public void US09_click_administration_button() {
+        Driver.wait(2);
         adminPage.administrationButton.click();
     }
-    @Then("US09 Verify that User management button is visible")
-    public void US09_verify_that_user_management_button_is_visible() {
-        ReusableMethods.waitFor(3);
-        Assert.assertEquals("User management", adminPage.userManagmentButtonUnderAdminidtrstion.getText());
-    }
+//    @Then("US09 Verify that User management button is visible")
+//    public void US09_verify_that_user_management_button_is_visible() {
+//        ReusableMethods.waitFor(3);
+//        Assert.assertEquals("User management", adminPage.userManagmentButtonUnderAdminidtrstion.getText());
+//    }
     @Then("US09 click User mamagement button")
     public void US09_click_user_mamagement_button() {
-        adminPage.userManagmentButtonUnderAdminidtrstion.click();
+        Driver.wait(4);
+        adminPage.userManagementDropDownUnderAdmin.click();
     }
     @Then("US09 verify that user is in Users page")
     public void US09_verify_that_user_is_in_users_page() {
-        ReusableMethods.waitFor(5);
+        ReusableMethods.waitFor(4);
         Assert.assertTrue(adminPage.usersHeader.isDisplayed());
     }
     @Then("US09 User can delete any patient info us09")
@@ -156,7 +160,7 @@ public class US_09_AdminStepDefs {
     }
     @Then("US09 user enters firstname and lastname bithdate email phone gender blood group address description User Country State")
     public void US09_user_enters_firstname_and_lastname_bithdate_email_phone_gender_blood_group_address_description_user_country_state() {
-
+        ReusableMethods.waitFor(2);
         ReusableMethods.doubleClick(patientPage.editPatientFirstName);
         ReusableMethods.waitFor(3);
         patientPage.editPatientFirstName.sendKeys(Keys.DELETE);
@@ -181,15 +185,15 @@ public class US_09_AdminStepDefs {
         patientPage.editPatientPhone.sendKeys(t);
         patientPage.editPatientPhone.sendKeys(Keys.DELETE);
         patientPage.editPatientPhone.sendKeys("434-527-8968");
-        ReusableMethods.waitFor(3);
+        ReusableMethods.waitFor(2);
         ReusableMethods.doubleClick(patientPage.editPatientGender);
         patientPage.editPatientGender.sendKeys(Keys.DELETE);
         patientPage.editPatientGender.sendKeys("OTHER");
         JSUtils.scrollIntoViewJS(Driver.getDriver().findElement(By.xpath("//*[@id=\"patient-birthDate\"]")));
         ReusableMethods.waitFor(4);
         actions.moveToElement(patientPage.editPatientBloodGroup).click().sendKeys("AB+").click().perform();
-        Select selectGender = new Select(patientPage.editPatientBloodGroup);
-        selectGender.selectByIndex(3);
+        Select selectBlood = new Select(patientPage.editPatientBloodGroup);
+        selectBlood.selectByIndex(3);
         ReusableMethods.waitFor(3);
         ReusableMethods.doubleClick(patientPage.editPatientAddress);
         String add = Keys.chord(Keys.CONTROL, "a");
@@ -219,12 +223,22 @@ public class US_09_AdminStepDefs {
     }
     @Then("US09 click Save")
     public void US09_click_save() {
-        ReusableMethods.waitFor(3);
+        Driver.wait(2);
         patientPage.editPatientSaveButton.click();
+        Driver.wait(2);
+
     }
+    @Then("US09 verify that pop up visible on the left corner")
+    public void us09_verify_that_pop_up_visible_on_the_left_corner() throws IOException {
+        ReusableMethods.getScreenshot("Admin EditPatient Screenshot");
+    }
+
     @Then("US09 verify that user can see all registration info populated")
     public void US09_verify_that_user_can_see_all_registration_info_populated() throws IOException {
+        ReusableMethods.waitFor(2);
         JSUtils.scrollIntoViewJS(Driver.getDriver().findElement(By.xpath("(//a[@href='javascript:void(0)'])[8]")));
+
+//        JSUtils.scrollIntoViewJS(Driver.getDriver().findElement(By.xpath("//div[@class='info jhi-item-count']")));
         ReusableMethods.waitFor(4);
         ReusableMethods.getScreenshot("Admin can see registration info");
     }
