@@ -28,9 +28,9 @@ public class HomePage {
     public WebElement homePageServicesButton;
     @FindBy(xpath = "(//span[@style='color: rgb(255, 255, 255);'])[4]")
     public WebElement homePageDepartmentsButton;
-    @FindBy(xpath = "(//span[@style='color: rgb(255, 255, 255);'])[2]")
+    @FindBy(xpath = "(//span[@style='color: rgb(255, 255, 255);'])[5]")
     public WebElement homePageDoctorsButton;
-    @FindBy(xpath = "(//span[@style='color: rgb(255, 255, 255);'])[2]")
+    @FindBy(xpath = "(//span[@style='color: rgb(255, 255, 255);'])[6]")
     public WebElement homePageContactButton;
     @FindBy (xpath = "//input[@id='username']")
     public WebElement homePageUsernameBox;
@@ -210,5 +210,26 @@ public class HomePage {
     //Birol
     @FindBy(xpath = "//a[@id='login-item']")
     public WebElement homeSignInButton;
+
+    //US26 abdurrahim
+
+    //contactPage
+    @FindBy(xpath = "//input[@id='name']")
+    public WebElement contactPageName;
+
+    @FindBy(xpath = "//input[@id='email']")
+    public WebElement contactPageEmail;
+
+    @FindBy(xpath = "//input[@id='subject']")
+    public WebElement contactPageSubject;
+
+    @FindBy(xpath = "//textarea[@id='message']")
+    public WebElement contactPageMessage;
+
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement contactSendButton;
+
+    @FindBy(xpath = "//div[@class='Toastify__toast Toastify__toast--success toastify-toast']")
+    public WebElement contactAlert;
 
 }

@@ -109,6 +109,7 @@ public class US_17 {
     }
     @Then("US17 Admin navigates Delete button and clicks")
     public void us17_admin_navigates_delete_button_and_clicks() {
+        Driver.waitAndClick(adminPage.createdDateChange);
         Driver.wait(3);
         Driver.clickWithJS(adminPage.adminPageTestItemDelete);
 
@@ -122,7 +123,8 @@ public class US_17 {
     @Then("US17 Admin catch the alert and verify it")
     public void us17_admin_catch_the_alert_and_verify_it() {
         Driver.wait(2);
-        Assert.assertTrue(adminPage.adminPageCreateOrEditTestItemAlertMessage.isDisplayed());
+     //   Assert.assertTrue(adminPage.adminPageCreateOrEditTestItemAlertMessage.isDisplayed());
+        Assert.assertTrue(adminPage.ATestItemIsDeletedWithIdentifier.isDisplayed());
 
 
     }

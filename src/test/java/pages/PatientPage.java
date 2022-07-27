@@ -93,6 +93,38 @@ public class PatientPage {
 
     //Please add your WebElemets below this comment section
 
+    //US24
+
+    @FindBy(xpath = "//span[normalize-space()='19/07/22 13:15']")
+    public WebElement myAppointmentCreatedDate;
+
+    @FindBy(xpath = "(//a[@class='btn btn-primary btn-sm'])[2]")
+    public WebElement myAppointmentShowTests;
+
+    @FindBy(xpath = "//a[@class='btn btn-info btn-sm']")
+    public WebElement myAppointmentViewResults;
+
+    @FindBy(xpath = "//tbody/tr/td[4]")
+    public  WebElement myAppointmentDefaultMin;
+
+    @FindBy(xpath = "//tbody/tr/td[5]")
+    public  WebElement myAppointmentDefaultMax;
+
+    @FindBy(xpath = "//a[@class='btn btn-warning btn-sm']")
+    public  WebElement myAppointmentShowInvoice;
+
+    @FindBy(xpath = "//th[normalize-space()='INVOICE']")
+    public WebElement invoiceVerify;
+
+    @FindBy(xpath = "//*[@id='entity-menu']/div/a[1]/span")
+    public WebElement myAppointments;
+
+    @FindBy(xpath = "//*[@id='entity-menu']")
+    public WebElement myPagesPatient ;
+
+
+
+
 
 
 

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="1.589">
+    <testcase classname="US17 Test Item DB validation" name="US17_TestItem_DB_validation" time="1.361">
+        <system-out><![CDATA[Given US17 admin connects to the database...................................passed
+And US17 admin gets "*" from "c_test_item" table............................passed
+Then US17 admin verify "c_test_item" table "name" column contains "Urea"....passed
+Then US17 close the connection..............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
