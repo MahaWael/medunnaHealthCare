@@ -11,32 +11,31 @@ import java.util.List;
 
 public class US17_DB {
 
-    List<Object> expectedId = new ArrayList<>();
-    List<Object>actualData = new ArrayList<>();
-
     @Given("US17 admin connects to the database")
     public void us17_admin_connects_to_the_database() {
-        DBUtils.getConnection();
+      DBUtils.getConnection();
     }
-
-
     @Given("US17 admin gets {string} from {string} table")
-    public void us17_admin_gets_from_table(String column, String table) throws SQLException {
-
-        String query = "select" + column + "from" + table;
+    public void us17_admin_gets_from_table(String column, String table) {
+        String query = " select " + column + " from " + table;
         DBUtils.executeQuery(query);
 
     }
+    @Then("US17 admin verify {string} table {string} column contains {string}")
+    public void us17_admin_verify_table_column_contains(String table, String column, String data) {
+        List<Object> allColumnData = DBUtils.getColumnData(" select * from " + table,column);
+        System.out.println(allColumnData);
 
-    @Given("US17 verify the {string},{string},{string} test item")
-    public void us17_verify_the_test_item(String table, String column, String name) {
-        expectedId.add("Urea");
-        actualData.add("Urea");
-        Assert.assertTrue(actualData.containsAll(expectedId));
+        Assert.assertTrue(allColumnData.contains(data));
+
     }
-    @Then("user closes database connection")
-    public void user_closes_database_connection() {
+    @Then("US17 close the connection")
+    public void us17_close_the_connection() {
         DBUtils.closeConnection();
     }
+
+
+
+
 }
 
