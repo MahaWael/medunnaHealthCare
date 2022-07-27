@@ -1,40 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="66.273">
-    <testcase classname="Staff can update patient appointments" name="US_21_08_staff_edit_patient" time="44.777">
-        <system-out><![CDATA[Given US21 user goes to medunna url.........................................passed
-When US21 user navigates to profile icon and clicks it......................passed
-And US21 user click sign in button..........................................passed
-Then US21 click username field..............................................passed
-And US21 user enters usernameUS21 "team89staff01" as staff..................passed
-And US21 user enters passwordUS21 "team89staff" as staff....................passed
-Then US21 user clicks Sign-in button........................................passed
-And US21 user navigates to MY PAGES Button and  click it....................passed
-And US21 click search patient button from dropdown..........................passed
-Then US21 User Enters valid SSN number "890-12-4324"........................passed
-And US21 User navigates to Show Appointments of patient and clicks..........passed
-And US21 User clicks the edit button of the first appointment...............passed
-Then US21 User can update the status "CANCELLED" CANCELLED , "PENDING" PENDING or "UNAPPROVED" UNAPPROVED.passed
-And US21 User selects the current doctor whose doctor value "115993"........passed
-Then US21 User clicks Save button and verifies that is saved................passed
-And US21  Staff close the application.......................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Staff can update patient appointments" name="US_21_08_staff_edit_patient_2" time="21.278">
-        <system-out><![CDATA[Given US21 user goes to medunna url.........................................passed
-When US21 user navigates to profile icon and clicks it......................passed
-And US21 user click sign in button..........................................passed
-Then US21 click username field..............................................passed
-And US21 user enters usernameUS21 "team89staff01" as staff..................passed
-And US21 user enters passwordUS21 "team89staff" as staff....................passed
-Then US21 user clicks Sign-in button........................................passed
-And US21 user navigates to MY PAGES Button and  click it....................passed
-And US21 click search patient button from dropdown..........................passed
-Then US21 User Enters valid SSN number "890-12-4324"........................passed
-And US21 User navigates to Show Appointments of patient and clicks..........passed
-Then US21 User clicks Show Tests button.....................................passed
-And US21 User clicks View Results button....................................passed
-Then US21 Verify that user can see Test Results.............................passed
-And US21  Staff close the application.......................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="1.589">
+    <testcase classname="US17 Test Item DB validation" name="US17_TestItem_DB_validation" time="1.361">
+        <system-out><![CDATA[Given US17 admin connects to the database...................................passed
+And US17 admin gets "*" from "c_test_item" table............................passed
+Then US17 admin verify "c_test_item" table "name" column contains "Urea"....passed
+Then US17 close the connection..............................................passed
 ]]></system-out>
     </testcase>
 </testsuite>
