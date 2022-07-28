@@ -13,11 +13,10 @@ import java.io.IOException;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertTrue;
-import static utilities.Authentication.generateToken;
 import static utilities.TxtWriter.saveAPITestItemData;
 
 
-public class US17_API_Get {
+public class US_17_APIStepDefs_01 {
 
     Response response;
 

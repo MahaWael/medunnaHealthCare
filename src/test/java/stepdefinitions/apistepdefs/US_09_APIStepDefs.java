@@ -11,7 +11,7 @@ import utilities.ConfigReader;
 import static io.restassured.RestAssured.given;
 import static utilities.TxtWriter.savePatientApiData;
 
-public class US09_PatientApiStepDefs {
+public class US_09_APIStepDefs {
     US09_PatientPojo[] us09patient;
     Response response;
 

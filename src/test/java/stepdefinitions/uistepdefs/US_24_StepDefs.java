@@ -1,10 +1,8 @@
 package stepdefinitions.uistepdefs;
 
-import io.cucumber.java.bs.A;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
-import org.openqa.selenium.support.ui.Select;
 import pages.DoctorPage;
 import pages.HomePage;
 import pages.LoginPage;
@@ -12,7 +10,7 @@ import pages.PatientPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class US_24 {
+public class US_24_StepDefs {
 
     HomePage homePage = new HomePage();
     LoginPage loginPage = new LoginPage();

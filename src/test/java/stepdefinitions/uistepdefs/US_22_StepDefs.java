@@ -15,7 +15,7 @@ import utilities.ReusableMethods;
 import java.util.ArrayList;
 import java.util.List;
 
-public class US_22 {
+public class US_22_StepDefs {
     List<String> searchedSsnListString = new ArrayList<>();
     String searchedValidSsn;
     String searchedInValidSsn;

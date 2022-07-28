@@ -9,7 +9,7 @@ import utilities.ReusableMethods;
 
 import java.io.IOException;
 
-public class US_09_DoctorStepDefs {
+public class US_09_StepDefs_02 {
 
     AdminPage adminPage= new AdminPage();
     PatientPage patientPage= new PatientPage();

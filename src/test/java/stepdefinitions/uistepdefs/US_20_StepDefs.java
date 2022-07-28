@@ -44,7 +44,6 @@ public class US_20_StepDefs {
                 Thread.sleep(1500);
                 System.out.println(e.getText());
                 if (e.getText().equals("140693")) {
-
                     counter++;
                 }
                 if(counter==0){
@@ -78,14 +77,17 @@ public class US_20_StepDefs {
             Driver.waitAndClick(adminPage.lastPageInUserManagementPage,5);
         int counter = 0;
         while(counter==0) {
-            Thread.sleep(1500);
             for (WebElement e : adminPage.team89userIDText) {
+                Thread.sleep(1500);
+                System.out.println(e.getText());
                 if (e.getText().equals("140693")) {
                     counter++;
                 }
+                if(counter==0){
+                    Driver.waitAndClick(adminPage.previousPageInUserManagementPage,5);
+                }
             }
-            Driver.waitAndClick(adminPage.previousPageInUserManagementPage,5);
-            Thread.sleep(500);
+
         }
         Driver.waitAndClick(adminPage.team89userEditButton,5);
     }
@@ -122,11 +124,16 @@ public class US_20_StepDefs {
         int counter = 0;
         while(counter==0) {
             for (WebElement e : adminPage.team89userIDText) {
+                Thread.sleep(1500);
+                System.out.println(e.getText());
                 if (e.getText().equals("140693")) {
                     counter++;
                 }
+                if(counter==0){
+                    Driver.waitAndClick(adminPage.previousPageInUserManagementPage,5);
+                }
             }
-            Driver.waitAndClick(adminPage.previousPageInUserManagementPage,5);
+
         }
         Driver.waitAndClick(adminPage.team89userDeleteButton,5);
 
@@ -139,7 +146,7 @@ public class US_20_StepDefs {
     @Then("us20 verify that admin can see the deleting success message")
     public void us20_verifies_that_success_message_is_displayed() throws InterruptedException {
         Thread.sleep(750);
-        Assert.assertEquals(Driver.waitForVisibility(adminPage.successMessageForEditingUser,5).getText(),"A user is deleted with identifier team89userforvieweditanddelete");
+        Assert.assertTrue(Driver.waitForVisibility(adminPage.successMessageForEditingUser,5).getText().contains("A user is deleted with identifier "));
     }
 
 

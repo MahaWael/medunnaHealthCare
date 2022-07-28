@@ -17,7 +17,7 @@ import utilities.JSUtils;
 import utilities.ReusableMethods;
 import java.io.IOException;
 
-public class US_09_AdminStepDefs {
+public class US_09_StepDefs_01 {
 
     AdminPage adminPage = new AdminPage();
     PatientPage patientPage= new PatientPage();
