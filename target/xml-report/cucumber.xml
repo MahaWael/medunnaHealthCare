@@ -1,10 +1,50 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="1.589">
-    <testcase classname="US17 Test Item DB validation" name="US17_TestItem_DB_validation" time="1.361">
-        <system-out><![CDATA[Given US17 admin connects to the database...................................passed
-And US17 admin gets "*" from "c_test_item" table............................passed
-Then US17 admin verify "c_test_item" table "name" column contains "Urea"....passed
-Then US17 close the connection..............................................passed
-]]></system-out>
-    </testcase>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="67.073">
+<testcase classname="US20 User management / Activate a new user and provide necessary roles ONLY" name="Admin can view or edit or delete registered user" time="66.833">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()='»»']&quot;}&#10;  (Session info: chrome=103.0.5060.134)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'LAPTOP-8FI3PAA6', ip: '192.168.1.194', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [85eb0d94404f2752e7cbd14eea779139, findElement {using=xpath, value=//a[text()='»»']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\mucah\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61693}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61693/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 85eb0d94404f2752e7cbd14eea779139" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given us20 admin goes to medunna url........................................passed
+And us20 admin signs in.....................................................passed
+And us20 admin clicks to Administration button..............................passed
+And us20 admin clicks to User Management button.............................passed
+Given us20 admin clicks on view button that is for registered user..........failed
+Then us20 verify that All registered user info can be viewed by admin.......skipped
+Given us20 admin clicks on back button......................................skipped
+And us20 admin clicks to edit button for editing existing user..............skipped
+When us20 admin edits all credentials of user...............................skipped
+And us20 admin clicks to save button........................................skipped
+Then us20 verify that admin can see the editing success message.............skipped
+Given us20 admin clicks to delete button for deleting existing user.........skipped
+Then us20 verify that admin can see the deleting success message............skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='»»']"}
+  (Session info: chrome=103.0.5060.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'LAPTOP-8FI3PAA6', ip: '192.168.1.194', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [85eb0d94404f2752e7cbd14eea779139, findElement {using=xpath, value=//a[text()='»»']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\mucah\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61693}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61693/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 85eb0d94404f2752e7cbd14eea779139
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy23.isEnabled(Unknown Source)
+	at stepdefinitions.uistepdefs.US_20_StepDefs.us20_admin_click_on_view_button_that_is_for_registered_user(US_20_StepDefs.java:39)
+	at ✽.us20 admin clicks on view button that is for registered user(file:///C:/Users/mucah/IdeaProjects/medunnahealthcare/./src/test/resources/features/uifeatures/US_20.feature:11)
+]]></failure>
+</testcase>
 </testsuite>
