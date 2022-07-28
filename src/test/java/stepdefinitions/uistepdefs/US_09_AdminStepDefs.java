@@ -27,7 +27,6 @@ public class US_09_AdminStepDefs {
     @Given("US09 user goes to base url")
     public void US09_user_goes_to_base_url() {
         Driver.getDriver().get(ConfigReader.getProperty("medunna_login_url"));
-
     }
     @Given("US09 user clicks profile icon")
     public void US09_user_clicks_profile_icon() {
@@ -125,7 +124,6 @@ public class US_09_AdminStepDefs {
         ReusableMethods.waitFor(3);
         Assert.assertTrue(adminPage.cancelPopUp.isDisplayed());
     }
-
     @Then("US09 verify that SSN search box is visible")
     public void US09_verify_that_ssn_search_box_is_visible() throws IOException {
         ReusableMethods.getScreenshot("SSN Search box is not visible In Users Page");
@@ -165,12 +163,10 @@ public class US_09_AdminStepDefs {
         ReusableMethods.waitFor(3);
         patientPage.editPatientFirstName.sendKeys(Keys.DELETE);
         Driver.waitAndSendText(patientPage.editPatientFirstName, Faker.instance().name().firstName());
-//        patientPage.editPatientFirstName.sendKeys("Jan");
         ReusableMethods.doubleClick(patientPage.editPatientLastName);
         ReusableMethods.waitFor(3);
         patientPage.editPatientLastName.sendKeys(Keys.DELETE);
         Driver.waitAndSendText(patientPage.editPatientLastName, Faker.instance().name().lastName());
-//        patientPage.editPatientLastName.sendKeys("Brown");
         ReusableMethods.doubleClick(patientPage.birthdayPartEdit);
         patientPage.birthdayPartEdit.sendKeys(Keys.DELETE);
         patientPage.birthdayPartEdit.sendKeys("06.08.19761834");
@@ -179,7 +175,6 @@ public class US_09_AdminStepDefs {
         patientPage.editPatientEmail.clear();
         Driver.waitAndSendText(patientPage.editPatientEmail, Faker.instance().internet().emailAddress());
         ReusableMethods.waitFor(3);
-//       patientPage.editPatientEmail.sendKeys("janwatt2345@gmail.com");
         ReusableMethods.doubleClick(patientPage.editPatientPhone);
         String t = Keys.chord(Keys.CONTROL, "a");
         patientPage.editPatientPhone.sendKeys(t);
@@ -201,7 +196,6 @@ public class US_09_AdminStepDefs {
         patientPage.editPatientAddress.sendKeys(Keys.DELETE);
         ReusableMethods.waitFor(4);
         Driver.waitAndSendText(patientPage.editPatientAddress, Faker.instance().address().fullAddress());
-//        patientPage.editPatientAddress.sendKeys("7 Richmond Road RG9 7NW Newbury");
         ReusableMethods.waitFor(3);
         ReusableMethods.doubleClick(patientPage.editPatientDescription);
         String dscrpt = Keys.chord(Keys.CONTROL, "a");
@@ -226,19 +220,16 @@ public class US_09_AdminStepDefs {
         Driver.wait(2);
         patientPage.editPatientSaveButton.click();
         Driver.wait(2);
-
     }
     @Then("US09 verify that pop up visible on the left corner")
     public void us09_verify_that_pop_up_visible_on_the_left_corner() throws IOException {
         ReusableMethods.getScreenshot("Admin EditPatient Screenshot");
     }
-
     @Then("US09 verify that user can see all registration info populated")
     public void US09_verify_that_user_can_see_all_registration_info_populated() throws IOException {
         ReusableMethods.waitFor(2);
         JSUtils.scrollIntoViewJS(Driver.getDriver().findElement(By.xpath("(//a[@href='javascript:void(0)'])[8]")));
-
-//        JSUtils.scrollIntoViewJS(Driver.getDriver().findElement(By.xpath("//div[@class='info jhi-item-count']")));
+//      JSUtils.scrollIntoViewJS(Driver.getDriver().findElement(By.xpath("//div[@class='info jhi-item-count']")));
         ReusableMethods.waitFor(4);
         ReusableMethods.getScreenshot("Admin can see registration info");
     }

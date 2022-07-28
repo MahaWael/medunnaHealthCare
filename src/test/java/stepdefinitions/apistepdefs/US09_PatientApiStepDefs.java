@@ -22,7 +22,6 @@ public class US09_PatientApiStepDefs {
                 ContentType.JSON, "Accept", ContentType.JSON).get("https://medunna.com/api/patients?=size=3000");
         response.prettyPrint();
     }
-
     @Given("user deserializes the patient data  to java")
     public void user_deserializes_the_patient_data_to_java() throws Exception {
         ObjectMapper objectMapper = new ObjectMapper();

@@ -231,6 +231,70 @@ public class StaffPage {
     @FindBy (xpath = "//input[@name='ssn']")
     public WebElement searchBoxSSNPatientSearch;
 
+//    US19
+    @FindBy(xpath = "//li[@id='account-menu']")
+    public WebElement homepageDropBox;
+
+    @FindBy(xpath = "(//span)[12]")
+    public WebElement homePageSignInButton;
+
+    @FindBy(xpath = "//input[@name='username']")
+    public WebElement SignInUsername;
+
+    @FindBy(xpath = "//input[@name='password']")
+    public WebElement SignInPassword;
+
+    @FindBy(xpath = "(//span) [24]")
+    public  WebElement InternalSignInButton;
+
+    @FindBy(xpath = "(//span) [21]")
+    public WebElement ItemsDropList;
+
+    //@FindBy (xpath = "//a[@href='/staff']")
+    @FindBy(xpath = "//span[normalize-space()='Staff']")
+    public WebElement StaffButton;
+
+    @FindBy(xpath = "(//span)[38]")
+    public WebElement CreateAnewStuffButton;
+
+    @FindBy(xpath = "//id[@name='searchSSN']")
+    public WebElement EnteringNewStaffSSNButton;
+
+    @FindBy(xpath = "//input[@id='staff-firstName']")
+    public WebElement EnteringNewStaffFirstnameButton;
+
+    @FindBy(xpath = "//input[@id='staff-lastName']")
+    public WebElement EnteringNewStaffLastnameButton;
+
+    @FindBy(xpath = "//input[@id='staff-birthDate']")
+    public WebElement EnteringNewStaffDatOfBirthButton;
+
+    @FindBy(xpath = "//input[@id='staff-phone']")
+    public WebElement EnteringNewStaffPhoneNumberButton;
+
+    @FindBy(xpath = "(//span)[53]")
+    public WebElement SaveButton;
+
+    @FindBy(xpath = "//button[@class='btn btn-secondary']")
+    public WebElement UserSearchButton;
+
+    @FindBy(xpath = "//div[@class='Toastify__toast-container Toastify__toast-container--top-left toastify-container']")
+    public  WebElement SuccessMessageOfSearching;
+
+    @FindBy(xpath = "(//span)[148]")
+    public WebElement ViewingStaffInfoButton;
+
+    @FindBy(xpath = "(//*[contains(text(),'Staff')])[2]")
+    public WebElement VerifyViewingInfo;
+
+    @FindBy(xpath = "(//span)[150]")
+    public WebElement EditingStaffInfoButton;
+
+    @FindBy(xpath = "(//span)[152]")
+    public WebElement DeletingStaffInfoButton;
+
+    @FindBy(xpath = "//a[@href='/staff/138209']")
+    public  WebElement ChoosingNewStaffIDButton;
 
 }
 

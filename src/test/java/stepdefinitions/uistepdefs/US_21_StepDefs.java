@@ -64,10 +64,8 @@ public class US_21_StepDefs {
     }
     @Then("US21 User navigates to Show Appointments of patient and clicks")
     public void us21_user_navigates_to_show_appointments_of_patient_and_clicks() {
-        staffPage.patientTwoShowAppointments.click();
-        Driver.wait(2);
-//        JSUtils.scrollIntoViewJS(Driver.getDriver().findElement(By.xpath("//a[@class='btn btn-primary btn-sm']")));
-//        Driver.wait(1);
+         staffPage.patientTwoShowAppointments.click();
+        Driver.wait(3);
     }
     @Then("US21 User clicks the edit button of the first appointment")
     public void us21_user_clicks_the_edit_button_of_the_first_appointment() {

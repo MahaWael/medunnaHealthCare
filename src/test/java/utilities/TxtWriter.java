@@ -83,7 +83,7 @@ public class TxtWriter {
 
     public static void savePatientApiData(US09_PatientPojo[] us09patient) {
         try {
-            FileWriter fw = new FileWriter(ConfigReader.getProperty("patientus09_api_data"), true);
+            FileWriter fw = new FileWriter(ConfigReader.getProperty("patients09_api_data"), true);
 
             BufferedWriter bw = new BufferedWriter(fw);
             for (int i = 0; i < us09patient.length; i++) {
