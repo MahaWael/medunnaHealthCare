@@ -16,7 +16,7 @@ import utilities.ReusableMethods;
 
 import java.io.IOException;
 
-public class US_09_StaffStepDefs {
+public class US_09_StepDefs_03 {
     StaffPage staffPage = new StaffPage();
     AdminPage adminPage = new AdminPage();
     Actions actions = new Actions(Driver.getDriver());

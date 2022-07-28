@@ -76,7 +76,7 @@ public class StaffPage {
     @FindBy(xpath = "(//a[@class='btn btn-primary btn-sm'])[1]")
     public WebElement EditButtonFirstPatient;
 
-    @FindBy(xpath = "(//a[@class='btn btn-warning btn-sm'])[1]")
+    @FindBy(xpath = "((//span[text()='Show Appointments'])[1]")
     public WebElement showAppointmentFirstPatient;
 
     @FindBy(xpath = "(//th[@class='hand'])[2]")
@@ -227,6 +227,9 @@ public class StaffPage {
 
     @FindBy(xpath = "//a[text()=' Show Invoice']")
     public WebElement paymentInfoPageCreateInvoiceButton;
+
+    @FindBy(xpath = "//th[text()='INVOICE']")
+    public WebElement paymentInfoInvoiceText;
 
 
 }

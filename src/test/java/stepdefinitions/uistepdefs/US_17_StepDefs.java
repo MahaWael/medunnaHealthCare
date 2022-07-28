@@ -16,7 +16,7 @@ import java.io.IOException;
 
 
 
-public class US_17 {
+public class US_17_StepDefs {
 
     AdminPage adminPage=new AdminPage();
     Faker faker=new Faker();

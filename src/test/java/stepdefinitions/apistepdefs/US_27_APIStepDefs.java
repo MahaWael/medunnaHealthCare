@@ -17,7 +17,7 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 
 //GET Request
-public class US_27_API_Messages {
+public class US_27_APIStepDefs {
     public static String generateToken2() {
         String username = "team89admin";
         String password = "team89admin";

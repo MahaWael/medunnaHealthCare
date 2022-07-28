@@ -5,11 +5,9 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import utilities.DBUtils;
 
-import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
-public class US17_DB {
+public class US_17_DBStepDefs {
 
     @Given("US17 admin connects to the database")
     public void us17_admin_connects_to_the_database() {
