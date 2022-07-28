@@ -1,1 +1,1 @@
-file:src/test/resources/features/uifeatures/US_22.feature:59:60:61:87:88:89
+file:src/test/resources/features/uifeatures/US_20.feature:6
