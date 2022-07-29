@@ -18,13 +18,13 @@ Feature: Staff can update patient appointments
     And US21 User navigates to Show Appointments of patient and clicks
     And US21 User clicks the edit button of the first appointment
     Then US21 User can update the status "<status1>" CANCELLED , "<status2>" PENDING or "<status3>" UNAPPROVED
-    And US21 User selects the doctor who is the current doctor
+    And US21 User selects the current doctor whose doctor value "<doctorvalue>"
     Then US21 User clicks Save button and verifies that is saved
     And US21  Staff close the application
 
     Examples:
-      |usernameUS21|passwordUS21|SSN Number|status1|status2|status3|
-      |team89staff01|team89staff|890-12-4324|CANCELLED|PENDING|UNAPPROVED|
+      |usernameUS21|passwordUS21|SSN Number|status1|status2|status3|doctorvalue|
+      |team89staff01|team89staff|890-12-4324|CANCELLED|PENDING|UNAPPROVED|115993|
 
   @US_21_02
   Scenario Outline: US_21_08_staff_edit_patient

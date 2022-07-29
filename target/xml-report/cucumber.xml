@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.253">
+<testcase classname="Payment Invoice by Staff" name="Staff can open invoice menu and see the fees of the test items and total cost and create invoice for the patient then should see the invoice that staff created" time="0.067">
+<system-out><![CDATA[Given us23 staff goes to medunna url........................................passed
+And us23 staff signs in.....................................................passed
+And us23 staff clicks to My pages button....................................passed
+And us23 staff clicks to Search Patient button..............................passed
+When us23 staff enter user SSN in the SSN searchBox.........................passed
+And us23 staff clicks show appointments button..............................passed
+Then us23 staff verifies that there is a button as Payment/ Invocie Process for the completed tests.passed
+When us23 staff clicks on Payment/ Invocie Process button...................passed
+Then us23 staff verifies that exam fee and total fee and test item fees exist in this page.passed
+When us23 staff clicks on create invoice Button.............................passed
+And us23 staff clicks on create Button......................................passed
+And us23 staff enter user SSN in the SSN searchBox..........................passed
+And us23 staff clicks show appointments button..............................passed
+And us23 staff clicks on Payment/ Invocie Process button....................passed
+When us23 staff clicks on create invoice Button.............................passed
+Then us23 verify that staff can view the invoice............................passed
+]]></system-out>
+</testcase>
+</testsuite>
