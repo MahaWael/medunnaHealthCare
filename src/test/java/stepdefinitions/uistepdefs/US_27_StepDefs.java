@@ -10,7 +10,7 @@ import pages.HomePage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class US_27_UIStepDefs {
+public class US_27_StepDefs {
     HomePage homePage = new HomePage();
 
     @Given("USTwentySeven The admin user goes to Medunna Url")

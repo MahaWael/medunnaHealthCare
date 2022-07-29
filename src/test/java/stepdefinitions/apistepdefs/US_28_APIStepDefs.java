@@ -8,7 +8,7 @@ import utilities.Authentication;
 import static io.restassured.RestAssured.given;
 
 
-public class US_28_ApiStepDefs {
+public class US_28_APIStepDefs {
     Response response;
     @Given("user reads country API data on {string}")
     public void user_reads_country_api_data_on(String url) {

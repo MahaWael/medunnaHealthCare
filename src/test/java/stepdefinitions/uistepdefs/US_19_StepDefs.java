@@ -1,18 +1,15 @@
-package stepDefinitions.ui;
+package stepdefinitions.uistepdefs;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.Keys;
 import pages.HomePage;
 import pages.StaffPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-import java.security.Key;
-
-public class US_19Creating_Editing_New_Staff {
+public class US_19_StepDefs {
     StaffPage staffPage=new StaffPage();
     HomePage homePage=new HomePage();
 

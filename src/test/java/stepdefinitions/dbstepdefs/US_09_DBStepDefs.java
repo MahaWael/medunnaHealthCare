@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class US09_PatientDBStepDefs {
+public class US_09_DBStepDefs {
     @Given("US09 user connects to the database")
     public void US09_user_connects_to_the_database() {
         DBUtils.getConnection();

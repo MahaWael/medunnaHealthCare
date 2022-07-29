@@ -4,6 +4,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
 public class AdminPage {
 
     public AdminPage() {
@@ -502,6 +504,48 @@ public class AdminPage {
 
     @FindBy(xpath = "//li[@id='entity-menu']")
     public WebElement adminItemsandTitles;
+    //webelements for the user team89userforviewededitanddelete
+    @FindBy(xpath = "//td[1]/a")
+    public List<WebElement> team89userIDText;
+    @FindBy(xpath = "//tr[@id='team89userforvieweditanddelete']/td[11]/div/a[1]")
+    public WebElement team89userViewButton;
+    @FindBy(xpath = "//tr[@id='team89userforvieweditanddelete']/td[11]/div/a[2]")
+    public WebElement team89userEditButton;
+    @FindBy(xpath = "//tr[@id='team89userforvieweditanddelete']/td[11]/div/a[3]")
+    public WebElement team89userDeleteButton;
+    @FindBy (xpath = "//b[text()]")
+    public WebElement userNameTextInUserViewPage;
+    @FindBy(xpath = "//span[text()='Login']")
+    public WebElement loginTextInUserViewPage;
+    @FindBy(xpath = "//dd[text()='team89']")
+    public WebElement firstNameTextInUserViewPage;
+    @FindBy(xpath = "//dd[text()='user']")
+    public WebElement lastNameTextInUserViewPage;
+    @FindBy(xpath = "//dd[text()='team89user@medunna.com']")
+    public WebElement eMailTextInUserViewPage;
+    @FindBy(xpath = "//dd[text()='team89admin']")
+    public WebElement modifiedByTextInUserViewPage;
+    @FindBy(xpath = "//span[text()='Back']")
+    public WebElement backButtonInUserViewPage;
+    @FindBy(xpath = "//a[text()='»»']")
+    public WebElement lastPageInUserManagementPage;
+    @FindBy(xpath = "//a[@aria-label='Previous']")
+    public WebElement previousPageInUserManagementPage;
+    @FindBy(id = "firstName")
+    public WebElement editFirstNameInEditUserPage;
+    @FindBy(id = "lastName")
+    public WebElement editLastNameInEditUserPage;
+    @FindBy(id = "email")
+    public WebElement editEMailInEditUserPage;
+    @FindBy(id = "authorities")
+    public WebElement editAuthoritiesInEditUserPage;
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement saveButtonInEditUserPage;
+    @FindBy(xpath = "//div[@role='alert']")
+    public WebElement successMessageForEditingUser;
+
+
+
 
     @FindBy (xpath= "(//div[@role='menu'])[2]")
     public WebElement userManagementDropDownUnderAdmin;

@@ -7,7 +7,7 @@ import utilities.DBUtils;
 
 import java.util.List;
 
-public class US_27_MessagesDB {
+public class US_27_DBStepDefs {
 
 
     @Given("US27 The user connects to DB")

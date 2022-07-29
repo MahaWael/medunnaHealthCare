@@ -3,7 +3,7 @@ package pojos;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class US_19 {
+public class Staff {
     /*
     {
   "adress": "string",
@@ -139,7 +139,7 @@ public class US_19 {
 
     @Override
     public String toString() {
-        return "US_19{" +
+        return "Staff{" +
                 "adress='" + adress + '\'' +
                 ", birthDate='" + birthDate + '\'' +
                 ", bloodGroup='" + bloodGroup + '\'' +

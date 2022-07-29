@@ -295,6 +295,9 @@ public class StaffPage {
 
     @FindBy(xpath = "//a[@href='/staff/138209']")
     public  WebElement ChoosingNewStaffIDButton;
+    @FindBy(xpath = "//th[text()='INVOICE']")
+    public WebElement paymentInfoInvoiceText;
+
 
 }
 

@@ -13,7 +13,7 @@ import java.io.IOException;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 
-public class US17_API_Post {
+public class US_17_APIStepDefs_02 {
     US17_TestItemsPojo testItemsPojo = new US17_TestItemsPojo();
     US17_TestItemsPojo expectedData;
     Response response;
