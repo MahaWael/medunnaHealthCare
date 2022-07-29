@@ -1,7 +1,5 @@
 package utilities;
-import pojos.Appointment_01;
-import pojos.US09_PatientPojo;
-import pojos.US17_TestItemsPojo;
+import pojos.*;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -85,7 +83,7 @@ public class TxtWriter {
 
     public static void savePatientApiData(US09_PatientPojo[] us09patient) {
         try {
-            FileWriter fw = new FileWriter(ConfigReader.getProperty("patientus09_api_data"), true);
+            FileWriter fw = new FileWriter(ConfigReader.getProperty("patients09_api_data"), true);
 
             BufferedWriter bw = new BufferedWriter(fw);
             for (int i = 0; i < us09patient.length; i++) {
@@ -99,8 +97,10 @@ public class TxtWriter {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
 
 
         //TxtWriter commit try
+
     }
-}
+

@@ -32,6 +32,7 @@ public class US_09_StepDefs_03 {
     }
     @Then("US09 click MY PAGES Button on staff page")
     public void US09_click_my_pages_button_on_staff_page() {
+        Driver.wait(2);
         staffPage.buttonMyPages.click();
         Driver.wait(3);
     }
@@ -61,6 +62,7 @@ public class US_09_StepDefs_03 {
     }
     @Then("US09 verify staff can edit firstname lastname birthdate email phone gender blood group address description user country and state")
     public void US09_verify_that_staff_can_edit_firstname_lastname_birthdate_email_phone_gender_blood_group_address_description_user_country_and_state() {
+        ReusableMethods.waitFor(3);
         ReusableMethods.doubleClick(staffPage.stafEditFirstNamePatiet);
         ReusableMethods.waitFor(3);
         staffPage.stafEditFirstNamePatiet.sendKeys(Keys.DELETE);
