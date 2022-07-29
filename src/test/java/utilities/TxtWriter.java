@@ -1,8 +1,8 @@
 package utilities;
-import pojos.*;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
+import pojos.Appointment;
+import pojos.Appointment_01;
+import pojos.US09_PatientPojo;
 import pojos.US17_TestItemsPojo;
 
 import java.io.BufferedWriter;
@@ -101,6 +101,20 @@ public class TxtWriter {
 
 
         //TxtWriter commit try
+        public static void saveAPIPatientData(Appointment[] appointments) {
+            try {
+                FileWriter fw = new FileWriter(ConfigReader.getProperty("applicants_api_data"), true);
+                //  file location
+                //  location + fileName + txt
+                BufferedWriter bw = new BufferedWriter(fw);
+                for (int i = 0; i < appointments.length; i++) {
+                    bw.append(appointments[i].toString() + "\n");
+                }
+                bw.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
 
     }
 

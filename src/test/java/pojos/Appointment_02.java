@@ -72,7 +72,7 @@ public class Appointment_02 {
 
     @Override
     public String toString() {
-        return "Appointment{" +
+        return "Appointment_02{" +
                 "createdBy='" + createdBy + '\'' +
                 ", createdDate='" + createdDate + '\'' +
                 ", id=" + id +
