@@ -231,6 +231,9 @@ public class StaffPage {
     @FindBy(xpath = "//th[text()='INVOICE']")
     public WebElement paymentInfoInvoiceText;
 
+    @FindBy(xpath = "//span[text()='Save']")
+    public WebElement paymentsavebuttonInInvoicePage;
+
 
 }
 
