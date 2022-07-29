@@ -73,7 +73,7 @@ public class AdminPage {
     public WebElement administrationButton;
     // Administration on the header part
 
-    @FindBy(xpath = "//span[text()='User management']")  //a[@class='dropdown-item'][1]
+    @FindBy(xpath = "//a[@class='dropdown-item'][1]")  //a[@class='dropdown-item'][1]
     public WebElement userManagmentButtonUnderAdminidtrstion;
     // Administration ==> Users managment
 
@@ -502,6 +502,8 @@ public class AdminPage {
     @FindBy(xpath = "/html/body/div[2]/div/div[1]/div/div/div[3]/button[2]/span")
     public WebElement adminPageTestItemConfirmDeleteOperationButton;
 
+    @FindBy(xpath = "//li[@id='entity-menu']")
+    public WebElement adminItemsandTitles;
     //webelements for the user team89userforviewededitanddelete
     @FindBy(xpath = "//td[1]/a")
     public List<WebElement> team89userIDText;
@@ -545,6 +547,8 @@ public class AdminPage {
 
 
 
+    @FindBy (xpath= "(//div[@role='menu'])[2]")
+    public WebElement userManagementDropDownUnderAdmin;
 
 
 
