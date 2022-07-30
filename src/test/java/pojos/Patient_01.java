@@ -1,7 +1,7 @@
 package pojos;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Patient {
+public class Patient_01 {
     private String firstName;
     private String lastName;
     private String email;
