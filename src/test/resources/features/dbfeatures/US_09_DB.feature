@@ -1,4 +1,5 @@
 @Regression
+@Smoke_Test
 Feature: database_read_feature
   @db_patient_data
   Scenario: read_patient_info

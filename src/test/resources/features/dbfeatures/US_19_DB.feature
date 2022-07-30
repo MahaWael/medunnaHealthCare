@@ -1,5 +1,6 @@
 @US19DB
 @Regression
+@Smoke_Test
 Feature:Admin_can_see_staff_by_id
 
   Scenario: read staff info

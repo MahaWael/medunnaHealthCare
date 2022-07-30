@@ -4,3 +4,4 @@ Registrant{firstName='Fausto', lastName='Cummings', ssn='058-21-0510', login='fa
 Registrant{firstName='Queenie', lastName='Reynolds', ssn='091-24-9093', login='queeniereynolds', langKey='null', password='3I6#HWIa&', email='queeniereynolds@gmail.com', id=0, activated=false, authorities=null}
 Registrant{firstName='Christoper', lastName='Ondricka', ssn='034-73-7418', login='christoperondricka', langKey='null', password='Id8#7!C!F', email='christoperondricka@gmail.com', id=0, activated=false, authorities=null}
 Registrant{firstName='Flavia', lastName='Rowe', ssn='660-58-4478', login='flaviarowe', langKey='null', password='#4Fs&&N3R', email='flaviarowe@gmail.com', id=0, activated=false, authorities=null}
+Registrant{firstName='Brock', lastName='Rutherford', ssn='617-71-8918', login='brockrutherford', langKey='null', password='In%NMTaVJav', email='brockrutherford@gmail.com', id=0, activated=false, authorities=null}
