@@ -1,5 +1,6 @@
 @US_03
   @Regression
+@Smoke_Test
 Feature: password_strength
   Background:
     Given user goes to Medunna Url

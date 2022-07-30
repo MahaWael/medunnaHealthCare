@@ -1,5 +1,6 @@
 @US0505
 @Regression
+@Smoke_Test
 Feature:Patient profile
   Background:
     Given us0501 Navigate to Medunna page
