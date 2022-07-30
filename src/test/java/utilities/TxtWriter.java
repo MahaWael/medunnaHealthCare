@@ -1,9 +1,6 @@
 package utilities;
 
-import pojos.Appointment;
-import pojos.Appointment_01;
-import pojos.US09_PatientPojo;
-import pojos.US17_TestItemsPojo;
+import pojos.*;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -116,5 +113,53 @@ public class TxtWriter {
             }
         }
 
+    public static void savePatientApiData(Patient_02[] patient02) {
+        try {
+            FileWriter fw = new FileWriter(ConfigReader.getProperty("patients09_api_data"), true);
+
+            BufferedWriter bw = new BufferedWriter(fw);
+            for (int i = 0; i < patient02.length; i++) {
+                bw.append(patient02[i].toString() + "\n");
+            }
+
+            bw.append(patient02.toString() + "\n");
+            bw.close();
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void saveUIRegistrantData(Registrant registrant) {
+        try {
+            FileWriter fw = new FileWriter(ConfigReader.getProperty("applicant_data"), true);
+            //  file location
+            //  location + fileName + txt
+            BufferedWriter bw = new BufferedWriter(fw);
+            bw.append(registrant.toString() + "\n");
+            bw.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void saveUIRegistrantData(Registrant[] registrant) {
+        try {
+            FileWriter fw = new FileWriter(ConfigReader.getProperty("patients09_api_data"), true);
+
+            BufferedWriter bw = new BufferedWriter(fw);
+            for (int i = 0; i < registrant.length; i++) {
+                bw.append(registrant[i].toString() + "\n");
+            }
+
+            bw.append(registrant.toString() + "\n");
+            bw.close();
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
     }
 

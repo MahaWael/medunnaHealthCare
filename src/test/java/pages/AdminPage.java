@@ -504,6 +504,8 @@ public class AdminPage {
 
     @FindBy(xpath = "//li[@id='entity-menu']")
     public WebElement adminItemsandTitles;
+
+
     //webelements for the user team89userforviewededitanddelete
     @FindBy(xpath = "//td[1]/a")
     public List<WebElement> team89userIDText;
