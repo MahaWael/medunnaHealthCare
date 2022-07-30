@@ -1,5 +1,6 @@
 #commit for git/github
   @US_20
+@Regression
 Feature:US20 User management / Activate a new user and provide necessary roles ONLY
   for Doctors and Staff by Admin
 

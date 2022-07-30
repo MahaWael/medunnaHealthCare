@@ -26,23 +26,23 @@ public class US_24_StepDefs {
     @Then("US24 patient sign in")
     public void us24_patient_sign_in() {
         homePage.homepageDropBox.click();
-        Driver.waitAndClick(homePage.homePageSignInButton, 1000);
+        Driver.waitAndClick(homePage.homePageSignInButton, 5);
 
-        Driver.waitAndSendText(loginPage.username, "team89patient06", 1000);
-        Driver.waitAndSendText(loginPage.password, "patient06", 1000);
-        Driver.waitAndClick(loginPage.loginButton, 1000);
+        Driver.waitAndSendText(loginPage.username, "team89patient06", 5);
+        Driver.waitAndSendText(loginPage.password, "patient06", 5);
+        Driver.waitAndClick(loginPage.loginButton, 5);
     }
 
     @Then("US24 patient clicks to my pages dropdown")
     public void us24_patient_clicks_to_my_pages_dropdown() {
 
-        Driver.waitAndClick(patientPage.myPagesPatient,1000);
+        Driver.waitAndClick(patientPage.myPagesPatient,5);
 
     }
 
     @Then("US24 patient clicks to my appointment")
     public void us24_patient_clicks_to_my_appointment() {
-        Driver.waitAndClick(patientPage.myAppointments,1000);
+        Driver.waitAndClick(patientPage.myAppointments,5);
     }
 
     @Given("US24_TC001 patient controls test date and description")
@@ -56,8 +56,8 @@ public class US_24_StepDefs {
 
     @Then("US24_TC001 patient controls test min and max values")
     public void us24_tc001_patient_controls_test_min_and_max_values() {
-        Driver.waitAndClick(patientPage.myAppointmentShowTests,1000);
-        Driver.waitAndClick(patientPage.myAppointmentViewResults,1000);
+        Driver.waitAndClick(patientPage.myAppointmentShowTests,5);
+        Driver.waitAndClick(patientPage.myAppointmentViewResults,5);
 
         Driver.wait(1);
         Assert.assertEquals("136",patientPage.myAppointmentDefaultMin.getText());

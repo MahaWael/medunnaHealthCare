@@ -1,9 +1,10 @@
+@Regression
 Feature: registration
   @US02TC01
   Scenario Outline: register_with_valid_credentials
-    Given user goes to base url
-    And user clicks register button
-    Then us02 user enters SSN "<SSN>"
+    Given us02 user goes to base url
+    And us02 user clicks register button
+    Then us02 us02 user enters SSN "<SSN>"
     And us02 user enters first name "<first_name>"
     And us02 user enters last name "<last_name>"
     And us02 user enters username with faker "<user_name>"
@@ -21,7 +22,7 @@ Feature: registration
   Scenario: register_without_a_username
 
     Given user goes to base url
-    And user clicks register button
+    And us02 user clicks register button
     And us02 user clicks on the username box without sending data
     And us02 user clicks on the firstname box
     And us02 user verifies getting name warning message
@@ -30,7 +31,7 @@ Feature: registration
   Scenario Outline: register_with_invalid_emails
 
     Given user goes to base url
-    And user clicks register button
+    And us02 user clicks register button
     And us02 user enters email "<email>"
     And us02 user clicks on the firstname box
     And us02 user verifies getting email warning message
@@ -56,7 +57,7 @@ Feature: registration
   Scenario Outline: register_with_valid_username
 
     Given user goes to base url
-    And user clicks register button
+    And us02 user clicks register button
     And us02 user enters username "<user_name>"
     And us02 user clicks on the firstname box
     And us02 user verifies getting username warning message
@@ -70,7 +71,7 @@ Feature: registration
   Scenario: register_without_a_username
 
     Given user goes to base url
-    And user clicks register button
+    And us02 user clicks register button
     And us02 user clicks on the email box without sending data
     And us02 user clicks on the firstname box
     And us02 user verifies getting email required message

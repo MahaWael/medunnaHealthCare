@@ -1,3 +1,4 @@
+@Regression
 Feature: US_05 Appointment DB validation
   @US05db_patient_id_appointment
   Scenario Outline: US05db_patient_id_appointment

@@ -1,7 +1,8 @@
+@Regression
 Feature: doctor
   Scenario Outline: doctor page
     Given user goes to base url
-    Then user clicks sign in button
+    Then us12 user clicks sign in button
     Then us12 user enters username
     And us12 user enters password
     And us12 user clicks on sign in button
@@ -26,7 +27,7 @@ Feature: doctor
 
   Scenario: staff page
     Given user goes to base url
-    Then user clicks sign in button
+    Then us12 user clicks sign in button
     Then us12 staff enters username
     And us12 staff enters password
     And us12 user clicks on sign in button

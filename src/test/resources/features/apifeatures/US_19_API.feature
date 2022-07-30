@@ -1,4 +1,5 @@
 @US19DB
+@Regression
 Feature:Admin_can_see_staff_by_id
 
   Scenario: read staff info

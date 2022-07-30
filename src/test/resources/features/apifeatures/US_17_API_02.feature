@@ -1,4 +1,5 @@
 @US_17_API
+@Regression
 Feature: test items
 
   @US17_GetAPI

@@ -1,4 +1,5 @@
 @US09_TC_10
+@Regression
 Feature: US_09_doctor_patient_page
   Background: user in login page
     Given US09 user goes to base url

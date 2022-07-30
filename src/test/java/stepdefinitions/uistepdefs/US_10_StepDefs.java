@@ -26,24 +26,24 @@ public class US_10_StepDefs {
     @Then("Doctor navigates the sign in page")
     public void doctor_navigates_the_sign_in_page() {
         homePage.homepageDropBox.click();
-        Driver.waitAndClick(homePage.homePageSignInButton, 1000);
+        Driver.waitAndClick(homePage.homePageSignInButton, 2);
     }
 
     @Then("Doctor sign in")
     public void doctor_sign_in() {
-        Driver.waitAndSendText(loginPage.username, "sudan_dr_ph1", 1000);
-        Driver.waitAndSendText(loginPage.password, "Abc123def*", 1000);
-        Driver.waitAndClick(loginPage.loginButton, 1000);
+        Driver.waitAndSendText(loginPage.username, "sudan_dr_ph1", 2);
+        Driver.waitAndSendText(loginPage.password, "Abc123def*", 2);
+        Driver.waitAndClick(loginPage.loginButton, 2);
     }
 
     @Then("Doctor navigates to My Pages segment")
     public void doctor_navigates_to_my_pages_segment() {
-        Driver.waitAndClick(doctorPage.doctorPageMyPagesDropBox, 1000);
+        Driver.waitAndClick(doctorPage.doctorPageMyPagesDropBox, 2);
     }
 
     @Then("Doctor clicks on My appointments")
     public void doctor_clicks_on_my_appointments() {
-        Driver.waitAndClick(doctorPage.doctorPagesMyAppointments, 1000);
+        Driver.waitAndClick(doctorPage.doctorPagesMyAppointments, 2);
     }
 
 
@@ -66,7 +66,7 @@ public class US_10_StepDefs {
     @Given("Doctor clicks on Edit button")
     public void doctor_clicks_on_edit_button() {
 
-        Driver.waitAndClick(doctorPage.doctorPageAppointmentsFirstEditButton, 1000);
+        Driver.waitAndClick(doctorPage.doctorPageAppointmentsFirstEditButton, 2);
 
     }
 

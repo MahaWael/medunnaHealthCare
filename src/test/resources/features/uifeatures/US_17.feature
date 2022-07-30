@@ -1,4 +1,5 @@
 @US_17
+@Regression
 Feature: password_strength
   Background:
     Given US17 goes to Medunna Url

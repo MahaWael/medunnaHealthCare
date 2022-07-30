@@ -1,3 +1,4 @@
+@Regression
 Feature:Contact portal test
 
   @US26_TC001

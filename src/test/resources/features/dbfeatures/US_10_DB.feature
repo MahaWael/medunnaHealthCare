@@ -1,4 +1,5 @@
 @databaseTest
+@Regression
 Feature: database_read_feature
 
   @db_validate_appointment

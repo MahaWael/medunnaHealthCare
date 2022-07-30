@@ -1,3 +1,4 @@
+@Regression
 Feature: Check DB Connectivity for Messages
   @US_27_DB
   Scenario: messages

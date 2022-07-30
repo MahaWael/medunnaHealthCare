@@ -1,4 +1,5 @@
 @us_07
+@Regression
 Feature:TC_0701
   @tc_0701
   Scenario Outline: TC_0701

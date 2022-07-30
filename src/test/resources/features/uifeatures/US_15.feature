@@ -1,4 +1,5 @@
 @US_15
+@Regression
 Feature: Create or edit patient by admin
 
 

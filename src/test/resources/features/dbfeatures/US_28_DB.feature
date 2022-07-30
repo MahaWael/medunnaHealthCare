@@ -1,3 +1,4 @@
+@Regression
 Feature: database
   @Db28
   Scenario: read user data

@@ -1,3 +1,4 @@
+@Regression
 Feature:TC_0705
   @tc_0705
   Scenario: TC_0705

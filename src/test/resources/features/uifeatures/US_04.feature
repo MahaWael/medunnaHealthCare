@@ -1,4 +1,5 @@
 @us04
+@Regression
 Feature: US04
   @tc_0401
   Scenario Outline: TC_0401

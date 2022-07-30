@@ -161,5 +161,42 @@ public class TxtWriter {
             e.printStackTrace();
         }
     }
+
+    public static void saveUiAppointmentData(Appointment appointment) {
+        try {
+
+            //file creation
+            FileWriter fw = new FileWriter(ConfigReader.getProperty("testItem_UI_data"), true);
+            //  file location
+            //  location + fileName + txt
+
+            //records creation
+            BufferedWriter bw = new BufferedWriter(fw);
+            bw.append(appointment.toString() + "\n");
+            bw.close();
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    public static void saveAppointmentApiData(Appointment[] appointment
+    ) {
+        try {
+            FileWriter fw = new FileWriter(ConfigReader.getProperty("patients09_api_data"), true);
+
+            BufferedWriter bw = new BufferedWriter(fw);
+            for (int i = 0; i < appointment.length; i++) {
+                bw.append(appointment[i].toString() + "\n");
+            }
+
+            bw.append(appointment.toString() + "\n");
+            bw.close();
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
     }
 

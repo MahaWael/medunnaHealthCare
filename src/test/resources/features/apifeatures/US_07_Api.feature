@@ -1,3 +1,4 @@
+@Regression
 Feature:TC_0704
   @api
   @tc_0704

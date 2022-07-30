@@ -1,4 +1,5 @@
 @doctor_appointment
+@Regression
 Feature: US_11 Doctor can create or edit the appointments
 
   Background:Doctor goes to url and sign in

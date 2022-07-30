@@ -1,3 +1,4 @@
+@Regression
 Feature: Validate appointments with API
 
 

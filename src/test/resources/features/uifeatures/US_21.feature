@@ -1,4 +1,5 @@
 @US_21
+@Regression
 Feature: Staff can update patient appointments
 
   Background: US21 user in login page

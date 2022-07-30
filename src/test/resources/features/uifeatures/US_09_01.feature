@@ -1,4 +1,5 @@
 @admin09
+@Regression
 Feature: Admin
   Background: user in login page
     Given US09 user goes to base url

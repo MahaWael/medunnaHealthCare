@@ -1,4 +1,5 @@
 @US_19_UI
+@Regression
 Feature: Creating_New_Staff
 
   Background: user_launches_the_browser

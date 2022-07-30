@@ -1,0 +1,6 @@
+Registrant{firstName='Hobert', lastName='Jenkins', ssn='188-01-8405', login='hobertjenkins', langKey='null', password='8HlYId^5Sr7z@4', email='hobertjenkins@gmail.com', id=0, activated=false, authorities=null}
+Registrant{firstName='Marvella', lastName='Connelly', ssn='600-51-4392', login='marvellaconnelly', langKey='null', password='9Lbld2u9#T3#u6uuS', email='marvellaconnelly@gmail.com', id=0, activated=false, authorities=null}
+Registrant{firstName='Fausto', lastName='Cummings', ssn='058-21-0510', login='faustocummings', langKey='null', password='KoX8KSyP&0QOx8zihP', email='faustocummings@gmail.com', id=0, activated=false, authorities=null}
+Registrant{firstName='Queenie', lastName='Reynolds', ssn='091-24-9093', login='queeniereynolds', langKey='null', password='3I6#HWIa&', email='queeniereynolds@gmail.com', id=0, activated=false, authorities=null}
+Registrant{firstName='Christoper', lastName='Ondricka', ssn='034-73-7418', login='christoperondricka', langKey='null', password='Id8#7!C!F', email='christoperondricka@gmail.com', id=0, activated=false, authorities=null}
+Registrant{firstName='Flavia', lastName='Rowe', ssn='660-58-4478', login='flaviarowe', langKey='null', password='#4Fs&&N3R', email='flaviarowe@gmail.com', id=0, activated=false, authorities=null}

@@ -1,4 +1,5 @@
 @US_27_UI
+@Regression
 Feature: US_27
   Background:
     Given USTwentySeven The admin user goes to Medunna Url
