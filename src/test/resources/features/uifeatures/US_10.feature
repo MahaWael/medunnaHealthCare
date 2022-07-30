@@ -1,4 +1,5 @@
 @US_10
+@Regression
 Feature: Test my appointments for physician
   Background:
     Given Doctor goes to medunna url

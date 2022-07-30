@@ -1,4 +1,5 @@
 @US_25
+@Regression
 Feature:Patient profile
   Background:
     Given user25 Navigate to Medunna page

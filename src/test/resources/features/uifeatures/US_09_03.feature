@@ -1,4 +1,5 @@
 @US09_staff
+@Regression
 Feature: US_09_staff_search_edit_patient
   Background: user in login page
     Given US09 user goes to base url

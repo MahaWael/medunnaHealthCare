@@ -1,4 +1,5 @@
 @US27_Api
+@Regression
 Feature: Us_27_Api
   Background:
     * US27Api User gets the token

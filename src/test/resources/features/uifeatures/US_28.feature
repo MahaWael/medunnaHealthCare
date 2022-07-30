@@ -1,3 +1,4 @@
+@Regression
 Feature: create country
   @US28
   Scenario: Admin creates a country

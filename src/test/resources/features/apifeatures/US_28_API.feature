@@ -1,4 +1,5 @@
 @Api28
+@Regression
 Feature: Country read/create/edit/delete by api
   Scenario: Read country data
     Given user reads country API data on "https://medunna.com/api/countries"

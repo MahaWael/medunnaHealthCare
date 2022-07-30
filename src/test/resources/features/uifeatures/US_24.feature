@@ -1,4 +1,5 @@
 @US24
+@Regression
 Feature: My appointment validation By Patient
   Background:
     Given US24 patient goes to medunna url

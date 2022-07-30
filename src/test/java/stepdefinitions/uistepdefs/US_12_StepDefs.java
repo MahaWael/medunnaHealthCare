@@ -21,7 +21,7 @@ public class US_12_StepDefs {
     HomePage homePage = new HomePage();
     DoctorPage doctorPage = new DoctorPage();
 
-    @Given("user clicks sign in button")
+    @Given("us12 user clicks sign in button")
     public void user_clicks_sign_in_button() {
         actions.moveToElement(registrationPage.loginIcon).click().build().perform();
         Driver.waitAndClick(homePage.homePageSignInButton);

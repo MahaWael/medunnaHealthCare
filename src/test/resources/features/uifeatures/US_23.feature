@@ -1,4 +1,5 @@
 @US_23
+@Regression
   Feature: Payment Invoice by Staff
     Scenario: Staff can open invoice menu and see the fees of the test items and total cost and create invoice for the patient then should see the invoice that staff created
       Given us23 staff goes to medunna url

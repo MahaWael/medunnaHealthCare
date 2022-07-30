@@ -17,7 +17,7 @@ public class AdminPage {
     @FindBy(xpath = "//li[@id='account-menu']")
     public WebElement profileicon;
 
-    @FindBy(xpath = "//*[@id='login-item']/span")
+    @FindBy(xpath = "//a[@id='login-item']")
     public WebElement signInUnderProfileIcon;
 
     @FindBy (xpath = "//*[@id=\"account-menu\"]/div/a[2]/span")
@@ -551,6 +551,7 @@ public class AdminPage {
 
     @FindBy (xpath= "(//div[@role='menu'])[2]")
     public WebElement userManagementDropDownUnderAdmin;
+
 
 
 

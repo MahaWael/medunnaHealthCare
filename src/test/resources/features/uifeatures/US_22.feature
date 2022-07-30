@@ -1,4 +1,5 @@
 @us22
+@Regression
 Feature: Patient Test results by Staff (Laboratory technician)
 
   @us22_01

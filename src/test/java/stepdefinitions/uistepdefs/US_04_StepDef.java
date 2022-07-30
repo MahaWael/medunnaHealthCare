@@ -32,23 +32,27 @@ public class US_04_StepDef {
 
     @Then("US04 Verify Sign in page is visible succesfully")
     public void US04_verify_sign_in_page_is_visible_succesfully() {
-
+        Driver.wait(2);
         String loginPageUrl = Driver.getDriver().getCurrentUrl();
         Assert.assertEquals(ConfigReader.getProperty("login_page_url"), loginPageUrl);
     }
 
     @Then("US04 Enter a valid username {string}")
     public void US04_enter_a_valid_username(String username) {
+        Driver.wait(2);
         signInPage.username.sendKeys(username);
     }
 
     @Then("US04 Enter a valid password {string}")
     public void US04_enter_a_valid_password(String password) {
+        Driver.wait(2);
         signInPage.password.sendKeys(password);
     }
 
     @Then("US04 Click Sign in button")
     public void US04_click_sign_in_button() {
+
+        Driver.wait(2);
         signInPage.signInButton.click();
     }
 
@@ -66,11 +70,14 @@ public class US_04_StepDef {
 
     @Then("US04 Enter a invalid username {string}")
     public void US04_enter_a_invalid_username(String invalidUsername) {
+        Driver.wait(2);
         signInPage.username.sendKeys(invalidUsername);
+        Driver.wait(2);
     }
 
     @Then("US04 Verify  the message -Authentication information not correct.-  is visible")
     public void US04_verify_the_message_authentication_information_not_correct_is_visible() {
+
         ReusableMethods.waitForVisibility(signInPage.unsuccessfulMessage, 2);
         ReusableMethods.waitForVisibility(signInPage.unsuccessfulMessageToastify, 2);
 
@@ -87,6 +94,7 @@ public class US_04_StepDef {
 
     @Then("US04 Enter a invalid password {string}")
     public void US04_enter_a_invalid_password(String invalidPassword) {
+        Driver.wait(2);
         signInPage.password.sendKeys(invalidPassword);
     }
 
@@ -113,6 +121,7 @@ public class US_04_StepDef {
     }
     @Then("US04 Verify 'Remember me\" text and checkbox are visible")
     public void US04_verify_remember_me_text_and_checkbox_are_visible() {
+        Driver.wait(2);
         ReusableMethods.waitForVisibility(signInPage.rememberMe,2);
         Assert.assertTrue(signInPage.rememberMe.isDisplayed());
     }
@@ -139,25 +148,30 @@ public class US_04_StepDef {
     }
     @Then("US04 Verify -Did you forget your password- link is visible succesfully")
     public void US04_verify_did_you_forget_your_password_link_is_visible_succesfully() {
+        Driver.wait(2);
         ReusableMethods.waitForVisibility(signInPage.passResetReqLink,2);
         Assert.assertTrue(signInPage.passResetReqLink.isDisplayed());
     }
     @Then("US04 Click the -Did you forget your password-  link")
     public void US04_click_the_did_you_forget_your_password_link() {
+        Driver.wait(1);
         signInPage.passResetReqLink.click();
     }
     @Then("US04 Verify user is  navigated to password resetting page")
     public void US04_verify_user_is_navigated_to_password_resetting_page() {
+        Driver.wait(1);
         String passResetRequestPageUrl = Driver.getDriver().getCurrentUrl();
         Assert.assertEquals(ConfigReader.getProperty("pass_reset_request_page_url"), passResetRequestPageUrl);
     }
     @Then("US04 Verify -Reset your password- page is visible succesfully")
     public void US04_verify_reset_your_password_page_is_visible_succesfully() {
+        Driver.wait(2);
         ReusableMethods.waitForVisibility(signInPage.resetYourPasswordText,2);
         Assert.assertTrue(signInPage.resetYourPasswordText.isDisplayed());
     }
     @Then("US04 Verify -You don't have an account yet?- text is visible succesfully")
     public void US04_verify_you_don_t_have_an_account_yet_text_is_visible_succesfully() {
+        Driver.wait(2);
         ReusableMethods.waitForVisibility(signInPage.dontHaveAnAccountText,2);
         Assert.assertTrue(signInPage.dontHaveAnAccountText.isDisplayed());
     }
@@ -182,6 +196,7 @@ public class US_04_StepDef {
     }
     @Then("US04 Verify Cancel button is visible succesfully")
     public void US04_verify_cancel_button_is_visible_succesfully() {
+        Driver.wait(2);
         ReusableMethods.waitForVisibility(signInPage.cancelBtn,2);
         Assert.assertTrue(signInPage.cancelBtn.isDisplayed());
     }

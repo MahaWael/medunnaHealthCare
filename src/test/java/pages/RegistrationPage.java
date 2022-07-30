@@ -53,7 +53,7 @@ public class RegistrationPage {
     @FindBy(xpath = "//div[normalize-space()='This field is invalid']")
     public WebElement registrationInvalidEmailWarningMessage;
 
-    @FindBy(xpath = "//div[normalize-space()='Your username is invalid.']")
+    @FindBy(xpath = "//div[text()='Your username is invalid.']")
     public WebElement registrationInvalidUserNameWarningMessage;
 
     @FindBy(xpath = "(//span)[12]")

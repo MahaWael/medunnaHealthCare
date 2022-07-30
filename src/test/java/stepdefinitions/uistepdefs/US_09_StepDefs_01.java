@@ -30,6 +30,7 @@ public class US_09_StepDefs_01 {
     }
     @Given("US09 user clicks profile icon")
     public void US09_user_clicks_profile_icon() {
+        Driver.wait(2);
         adminPage.profileicon.click();
         Driver.wait(2);
     }

@@ -19,16 +19,16 @@ public class US_02_StepDefs {
     Faker faker=new Faker();
 
 
-    @Given("user goes to base url")
+    @Given("us02 user goes to base url")
     public void user_goes_to_base_url() {Driver.getDriver().get(ConfigReader.getProperty("medunna_login_url"));
     }
-    @Given("user clicks register button")
+    @Given("us02 user clicks register button")
     public void user_clicks_register_button() {
         actions.moveToElement(registrationPage.loginIcon).click().build().perform();
         ReusableMethods.waitForClickablility(registrationPage.registerButton, 2).click();
     }
 
-    @Given("us02 user enters SSN {string}")
+    @Given("us02 us02 user enters SSN {string}")
     public void us02_user_enters_ssn(String SSN) {
         SSN = faker.idNumber().ssnValid();
         Driver.waitAndSendText(registrationPage.registrationSsnNumberBox, SSN);
@@ -134,6 +134,7 @@ public class US_02_StepDefs {
 
     @Given("us02 user verifies getting username warning message")
     public void us02_user_verifies_getting_username_warning_message() {
+        Driver.wait(2);
         Assert.assertTrue(registrationPage.registrationInvalidUserNameWarningMessage.isDisplayed());
     }
 

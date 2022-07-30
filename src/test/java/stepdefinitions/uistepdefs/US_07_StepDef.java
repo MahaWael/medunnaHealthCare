@@ -31,21 +31,23 @@ public class US_07_StepDef {
     }
     @Then("US07 Click on Sign in button")
     public void US07_click_on_sign_in_button() {
+        Driver.wait(2);
         signInPage.dropdown.click();
         signInPage.SignInDropdown.click();
     }
     @Then("US07 Enter a valid username {string}")
     public void US07_enter_a_valid_username(String username) {
-        signInPage.username.sendKeys(username);
+        Driver.wait(2);signInPage.username.sendKeys(username);
     }
 
     @Then("US07 Enter a valid password {string}")
     public void US07_enter_a_valid_password(String password) {
-        signInPage.password.sendKeys(password);
+        Driver.wait(2);signInPage.password.sendKeys(password);
     }
 
     @Then("US07 Click Sign in button")
     public void US07_click_sign_in_button() {
+        Driver.wait(2);
         signInPage.signInButton.click();
     }
 

@@ -1,3 +1,4 @@
+@Regression
 @US_17_API
 Feature: test items
 

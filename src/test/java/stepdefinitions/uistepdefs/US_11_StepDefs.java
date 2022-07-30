@@ -44,12 +44,12 @@ public class US_11_StepDefs {
     }
     @Then("us11 verify patient's info id, start and end date, status, physician are present")
     public void us11_verify_patient_s_info_id_start_and_end_date_status_physician_are_present() {
-        Assert.assertEquals(doctorPage.firstPatientAppointmentID.getText(),"121520");
-        Assert.assertEquals(doctorPage.firstPatientAppointmentStartDateTime.getText(),"13/07/22 17:00");
-        Assert.assertEquals(doctorPage.firstPatientAppointmentEndDateTime.getText(),"13/07/22 17:30");
-        Assert.assertEquals(doctorPage.firstPatientAppointmentStatus.getText(),"UNAPPROVED");
-        Assert.assertEquals(doctorPage.firstPatientAppointmentPhysician.getText(),"fatma seher");
-        Assert.assertEquals(doctorPage.firstPatientAppointmentPatient.getText(),"emir");
+        Assert.assertTrue(doctorPage.firstPatientAppointmentID.isDisplayed());
+        Assert.assertTrue(doctorPage.firstPatientAppointmentStartDateTime.isDisplayed());
+        Assert.assertTrue(doctorPage.firstPatientAppointmentEndDateTime.isDisplayed());
+        Assert.assertTrue(doctorPage.firstPatientAppointmentStatus.isDisplayed());
+        Assert.assertTrue(doctorPage.firstPatientAppointmentPhysician.isDisplayed());
+        Assert.assertTrue(doctorPage.firstPatientAppointmentPatient.isDisplayed());
 
     }
     @When("us11 doctor clicks on edit button to create or edit an apppointment")

@@ -1,3 +1,4 @@
+@Regression
 Feature: validate patient info
   @09All_ApiPatientInfo
   Scenario: total patient info

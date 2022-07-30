@@ -1,4 +1,5 @@
 @US_14
+@Regression
 Feature: password_strength
   Background:
     Given user goes to Medunna Url

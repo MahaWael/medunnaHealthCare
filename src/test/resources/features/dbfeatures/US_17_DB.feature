@@ -1,3 +1,4 @@
+@Regression
 Feature: US17 Test Item DB validation
 
   @US17_DB

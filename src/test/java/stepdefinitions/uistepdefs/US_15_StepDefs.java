@@ -26,14 +26,14 @@ public class US_15_StepDefs {
     @Then("Admin navigates the sign in page")
     public void admin_navigates_the_sign_in_page() {
         homePage.homepageDropBox.click();
-        Driver.waitAndClick(homePage.homePageSignInButton, 1000);
+        Driver.waitAndClick(homePage.homePageSignInButton, 5);
     }
 
     @Then("Admin sign in")
     public void admin_sign_in() {
-        Driver.waitAndSendText(loginPage.username, "team89admin", 1000);
-        Driver.waitAndSendText(loginPage.password, "team89admin", 1000);
-        Driver.waitAndClick(loginPage.loginButton, 1000);
+        Driver.waitAndSendText(loginPage.username, "team89admin", 5);
+        Driver.waitAndSendText(loginPage.password, "team89admin", 5);
+        Driver.waitAndClick(loginPage.loginButton, 5);
     }
 
     @Then("Admin navigates to Items&Titles segment")
@@ -68,12 +68,12 @@ public class US_15_StepDefs {
         String country="USA";
         String city="New York";
 
-        Driver.waitAndSendText(Driver.getDriver().findElement(By.name("firstName")),firstname,1000);
-        Driver.waitAndSendText(Driver.getDriver().findElement(By.name("lastName")),lastname,1000);
-        Driver.waitAndSendText(Driver.getDriver().findElement(By.name("email")),email,1000);
-        Driver.waitAndSendText(Driver.getDriver().findElement(By.name("phone")),phoneNumber,1000);
-        Driver.waitAndSendText(Driver.getDriver().findElement(By.name("country.id")),country,1000);
-        Driver.waitAndSendText(Driver.getDriver().findElement(By.name("cstate.id")),city,1000);
+        Driver.waitAndSendText(Driver.getDriver().findElement(By.name("firstName")),firstname,5);
+        Driver.waitAndSendText(Driver.getDriver().findElement(By.name("lastName")),lastname,5);
+        Driver.waitAndSendText(Driver.getDriver().findElement(By.name("email")),email,5);
+        Driver.waitAndSendText(Driver.getDriver().findElement(By.name("phone")),phoneNumber,5);
+        Driver.waitAndSendText(Driver.getDriver().findElement(By.name("country.id")),country,5);
+        Driver.waitAndSendText(Driver.getDriver().findElement(By.name("cstate.id")),city,5);
 
 
 
@@ -126,12 +126,12 @@ public class US_15_StepDefs {
     @Given("Admin  clicks on patient's ID")
     public void admin_clicks_on_patient_s_id() {
         Driver.wait(2);
-        Driver.waitAndClick(Driver.getDriver().findElement(By.xpath("//a[normalize-space()='2301']")),1000);
+        Driver.waitAndClick(Driver.getDriver().findElement(By.xpath("//a[normalize-space()='2301']")),5);
     }
 
     @Then("Admin clicks on edit button")
     public void admin_clicks_on_edit_button() {
-        Driver.waitAndClick(Driver.getDriver().findElement(By.xpath("//a[@class='btn btn-primary']")),1000);
+        Driver.waitAndClick(Driver.getDriver().findElement(By.xpath("//a[@class='btn btn-primary']")),5);
     }
 
     @Then("Admin try to assign doctor for patient")
